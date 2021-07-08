@@ -1,10 +1,10 @@
-#git pull
+## git pull
 
-#git add -A // -A depuis la racine du projet
+## git add -A // -A depuis la racine du projet
 
-#git commit -m "..." // remplacer ... par la description de la modification
+## git commit -m "..." // remplacer ... par la description de la modification
 
-#git push
+## git push
 # CSEvent
 
 **Alternative selection/fit software**
