@@ -1,0 +1,7 @@
+Unix.*.Root.MacroPath: ./:$(HOME)/root.macros:$(RICH_MATRICES)/root.macros:$(ROOTSYS)/macros
+Unix.*.Root.DynamicPath: ./:$(PHAST):$(HOME)/root.macros:$(ROOTSYS)/lib
+Unix.*.Root.UseTTFonts:     true
+Rint.Canvas.HighLightColor:      2
+Rint.Logon:   $(HOME)/rootlogon.C
+Browser.Name: TRootBrowser
+Rint.History: $(PWD)/.root_hist

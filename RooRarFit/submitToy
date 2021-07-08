@@ -1,0 +1,155 @@
+#!@PERL@
+
+use Getopt::Std;
+use File::Basename;
+
+# Set some defaults
+if ($ENV{"BFSITE"} eq "slac") {
+  $queue = "medium";
+} elsif ($ENV{"BFSITE"} eq "cu-boulder") {
+  $queue = "lnxfarm_new";
+} elsif ($ENV{"BFSITE"} eq "ed") {
+  $queue = "condor";
+} elsif ($ENV{"BFSITE"} eq "ral" || $ENV{"BFSITE"} eq "ralpp") {
+  $queue = "prod";
+}
+
+$rarFitOptions="";
+$nExpts=1;
+$nJobs=1;
+$nExptsPerJob=1;
+
+$jobDir = toyJob;
+$keepDir = No;
+
+# Get the command line options
+getopts('hn:j:D:C:A:q:d:kt');
+
+# Help menu
+if (defined $opt_h) {
+  help();
+  exit;
+}
+
+# We need a config file
+if (!(defined $ARGV[0])) {
+  print "Error : need a config file\n Try submitToy -h for syntax\n";
+  exit;
+}
+$configFile = $ARGV[0];
+$configBaseName = basename($configFile);
+
+# Set the various options
+if (defined $opt_n) {$nExpts = $opt_n;}
+if (defined $opt_j) {
+  $nJobs = $opt_j;
+  $nExptsPerJob = int($nExpts / $opt_j);
+}
+if (defined $opt_D) {$rarFitOptions = "$rarFitOptions -D $opt_D";}
+if (defined $opt_C) {$rarFitOptions = "$rarFitOptions -C $opt_C";}
+if (defined $opt_A) {$rarFitOptions = "$rarFitOptions -A $opt_A";}
+
+if (defined $opt_q) {$queue = $opt_q;}
+
+if (defined $opt_d) {$jobDir = $opt_d;}
+if (defined $opt_k) {$keepDir = Yes;}
+
+# Create a subdirectory for the jobs. If it already exists, rename it
+if (-e $jobDir && $keepDir eq "No") {
+  print "\nDirectory $jobDir already exists.\n";
+  print "--> Renaming it to $jobDir.old\n\n";
+  if (-e "$jobDir\.old") {
+    die "\nError: $jobDir.old already exists too.".
+      " I can't do everything for you...\n".
+      "  If you want to keep the dir, please specify option -k\n\n";}
+  system "mv $jobDir $jobDir.old";
+}
+(-e $jobDir) || mkdir($jobDir,0777)
+  || die "Error : cannot create directory $jobDir";
+$logDir="$jobDir/log";
+(-e $logDir) || mkdir($logDir,0777)
+  || die "Error : cannot create directory $logDir";
+$tempDir = "${jobDir}/tempFiles";
+(-e $tempDir) || mkdir($tempDir,0777)
+  || die "Error : cannot create directory $tempDir";
+
+print "setenv RESULTDIR $jobDir\n" ;
+$ENV{"RESULTDIR"} = $jobDir ;
+# copy config file
+system "cp $configFile $jobDir/";
+$config="$jobDir/$configBaseName";
+
+# Open the macro file that will be created for merging the root files
+open(ROOTMACRO,">$jobDir/merge.C") ||
+  die "Error : cannot open file $jobDir/merge.C\n";
+print ROOTMACRO ("// Invoke with");
+print ROOTMACRO ("\n//  bbrroot -l -b -q ${jobDir}/merge.C");
+print ROOTMACRO ("\n{\n  TChain chain(\"toyResults\");");
+print ROOTMACRO ("\n  chain.Add(\"${jobDir}/*.toyPlot.*.root\");");
+print ROOTMACRO ("\n  chain.Merge(\"${jobDir}/all.root\");\n");
+print ROOTMACRO ("\n  cout << \"Entries: \" << chain.GetEntries() << endl;\n}\n");
+close ROOTMACRO;
+
+$iJob = 0;
+while ($iJob < $nJobs) {
+  $iJob++;
+  $sJob=sprintf("%03d", $iJob);
+  # Print some information
+  print "Submitting job $iJob \n";
+  # Get a short job name for the batch system
+  $job = substr(basename($configBaseName, ".config"), 0, 9) . $sJob;
+  # construct rarFit job string
+  $bfarch = $ENV{"BFARCH"};
+  $rarFitJob="./bin/$bfarch/rarFit -t $iJob -n $nExptsPerJob".
+    " -d $jobDir/tempFiles $rarFitOptions ${config}";
+  # job queue string for different sites
+  if ($ENV{"BFSITE"} eq "slac") {
+    $rarFitJob="bbrbsub -q $queue -J $job -o $logDir/$job.log $rarFitJob";
+  } elsif ($ENV{"BFSITE"} eq "cu-boulder") {
+    $rarFitJob="Qsub -l $queue -N $job -e -o $logDir/$job.log gtime -v".
+      " $rarFitJob";
+  } elsif ($ENV{"BFSITE"} eq "ed") {
+    $rarFitJob="condor_run \" $rarFitJob \" >& $logDir/$job.log &";
+  } elsif ($ENV{"BFSITE"} eq "ral" || $ENV{"BFSITE"} eq "ralpp") {
+    $rarFitJob  = "bbrbsub -q $queue -l cput=67:59:00,walltime=67:59:00" .
+      " -N $job -o $logDir/$job.log $rarFitJob";
+  } else { # you should put your site-specific queue opt above this line
+    # nothing to do if no site-specific queue opt defined, just echo
+    print "Unknown site defined : " . $ENV{"BFSITE"} . "\n";
+    $rarFitJob="echo $queue $job $logDir/$job.log $rarFitJob";
+  }
+  # Submit the job, unless the -t option was picked
+  print "$rarFitJob\n\n";
+  unless ($opt_t) {system "$rarFitJob";}
+}
+
+
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+#
+#  Subroutines
+#
+
+#
+# Help menu
+#
+sub help() {
+  print "\nUsage : submitToy [options] configFile\n\n";
+  print "  where configFile is a RooRarFit config file and\n";
+  print "  options are (defaults in parenthesis):\n\n";
+  print "     -h           : this help message\n";
+  print "     -n nExp      : total number of experiments\n";
+  print "     -j nJobs     : number of jobs to run\n";
+  print "     -D dsi       : toyAct dsi from config\n";
+  print "     -C pdfConfSec: toyAct master pdf section from config\n";
+  print "     -A action    : toyAct name from config\n";
+  print "     -q queue     : specific queue to submit to\n";
+  print "     -d jobDir    : directory for the jobs (toyJob)\n";
+  print "     -k           : keep the job dir\n";
+  print "     -t           : testing, not submit the jobs in the queue\n";
+  print "\n  This script will take a config file that configures\n";
+  print " a RooRarFit job and split it into a number of separate jobs.\n";
+  print " The jobs are then submitted to the queue of your choice.\n\n";
+  print " Example:  submitToy -n 500 -j 10 -A eToyAct -d etoy_omks omks.config\n";
+  print " submits 10 jobs based on the eToyAct action in the\n";
+  print " omks.config file\n\n"
+}
