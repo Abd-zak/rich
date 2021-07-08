@@ -48,4 +48,3 @@ setenv LD_LIBRARY_PATH .:$RICH_MATRICES/RooRarFit/tmp:$LD_LIBRARY_PATH
 setenv ROOT_INCLUDE_PATH $RICH_MATRICES/RooRarFit/tmp/RooRarFit
 ```
 **See README in sub-directories**
-# rich
