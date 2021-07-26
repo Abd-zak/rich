@@ -127,22 +127,14 @@ int data_ff_nb;
 int data_lf_nb;
 int data_nb;
 string fit_type;
-
-// new ***********
-bool merge_charge = false;
-bool cols_t_bin = false;
-// *********************
 string hist_file_K0 =   "hist_K0.root";
 string hist_file_Lam =  "hist_Lambda.root";
 string hist_file_iphi = "hist.iphi.root";
 string hist_file_ephi = "hist.ephi.root";
 string out_file = "rich.root";
-
 int id_lst[5]; double lh_cut[5][6]; // LikeliHood cuts
-
 TH1D* h[8][5][Np][Nt];
 TH2D* h2[8][5][Np][Nt];
-
 // Kinematics histos
 TH2D *am_all, *am_K0, *am_L;
 TH2D *am_K0p, *am_K0m;
@@ -156,12 +148,6 @@ TH1D *Z_Iphi,  *Z_Ephi;
 TH2D *XY_Iphi, *XY_Ephi;
 TH1D *pT_Iphi, *pT_Ephi, *dE_Iphi, *dE_Ephi;
 TH1D *Tr_Iphi, *Tr_Ephi, *Rb_Iphi, *Rb_Ephi, *Rt_Iphi, *Rt_Ephi;
-
-// new ***********
-TH2D *thc_K0,  *thc_L,*thc_K0_a,  *thc_L_a;
-TH2D *thc_phi,*thc_phi_a;
-// ************************
-
 // Kinematics cuts
 double DdD_cuts[2], cth_cuts[2]; // 0: K0, 1: Lambda.
 double pT_cuts[4];               // 0: K0, 1: Lambda, 2: Incl. phi, 3: Excl. phi 
@@ -204,8 +190,6 @@ RooDataHist* gen_K0(int, int , int, int);
 void write_hist();
 void create_hist();
 void get_plots();
-void merge_h_charge();
-void cols_theta();
 void fit_table_K0(int);
 void fit_table_phi(int);
 void fit_table_Lambda(int);

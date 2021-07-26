@@ -149,8 +149,6 @@ int main(int argc, char *argv[]){
   else if (mode=="fit") {               // ***** fit
     initCounts();
     get_plots();
-    if (merge_charge==true )     	merge_h_charge();
-    if (cols_t_bin==true )     	cols_theta();
     if (fit_type=="all") {
       fit_table_K0(0);     fit_table_K0(1);     // pi-, pi+
       fit_table_phi(0);    fit_table_phi(1);    // k-,  k+  from incl. phi 
@@ -185,7 +183,6 @@ bool get_inputFile(int pi)
   else
     return 0;
 }
-
 
 /**********************************************************************/
 bool read_options(string optFile) {
@@ -266,26 +263,22 @@ bool read_options(string optFile) {
       if (var1 == "analysis:")		analysis = var2;
       if (var1 == "data_file:")		data_file = var2;
       if (var1 == "data_template:")		data_template = var2;
-      if (var1 == "data_firstfile_nb:")	data_ff_nb = stoi(var2.c_str());
-      if (var1 == "data_lastfile_nb:")	data_lf_nb = stoi(var2.c_str());
+      if (var1 == "data_firstfile_nb:")		data_ff_nb = stoi(var2.c_str());
+      if (var1 == "data_lastfile_nb:")		data_lf_nb = stoi(var2.c_str());
       if (var1 == "fit_type:")		fit_type = var2;
-      if (var1 == "merged_h:")		{if(var2=="false") merge_charge = false; else merge_charge = true;}   
-      if (var1 == "cols_theta_bin:")		{if(var2=="true") cols_t_bin = true; else cols_t_bin = false;}
-      if (var1 == "fit_type:")		fit_type = var2;
-      if (var1 == "hist_file_K0:")		hist_file_K0 = var2;
-      if (var1 == "hist_file_iphi:")		hist_file_iphi = var2;
-      if (var1 == "hist_file_ephi:")		hist_file_ephi = var2;
-      if (var1 == "hist_file_Lam:")		hist_file_Lam = var2;
+      if (var1 == "hist_file_K0:")	hist_file_K0 = var2;
+      if (var1 == "hist_file_iphi:")	hist_file_iphi = var2;
+      if (var1 == "hist_file_ephi:")	hist_file_ephi = var2;
+      if (var1 == "hist_file_Lam:")	hist_file_Lam = var2;
       if (var1 == "out_file:")		out_file = var2;
       if (var1 == "line_width:")		stringstream ( var2 ) >> lw;
-      if (var1 == "remove_richpipe:")		{if(var2=="true") rpipe = true; else rpipe = false;}
+      if (var1 == "remove_richpipe:"){if(var2=="true") rpipe = true; else rpipe = false;}
       if (var1 == "max_retry:")		stringstream ( var2 ) >> retry;
       if (var1 == "thr_diff:")		stringstream ( var2 ) >> thr_diff;
-      if (var1 == "minuit_improve:")		{if(var2=="true") use_improve = true; else use_improve = false;}
-      if (var1 == "minuit_hesse:")		{if(var2=="true") use_hesse = true; else use_hesse = false;}
-      if (var1 == "minuit_minos:")		{if(var2=="true") use_minos = true; else use_minos = false;}
+      if (var1 == "minuit_improve:")	{if(var2=="true") use_improve = true; else use_improve = false;}
+      if (var1 == "minuit_hesse:")	{if(var2=="true") use_hesse = true; else use_hesse = false;}
+      if (var1 == "minuit_minos:")	{if(var2=="true") use_minos = true; else use_minos = false;}
       if (var1 == "sidebins:")		{if(var2=="true") use_sidebins = true; else use_sidebins = false;}
-    
       else{
 	it = opt.find( var1 );
 	if(it != opt.end()){
@@ -317,7 +310,6 @@ bool read_options(string optFile) {
 
   return true;
 }
-
 
 /**********************************************************************/
 void create_hist(){
@@ -595,7 +587,6 @@ void get_input_data_t1(){
 	  (LambdaPat&LambdaRequired)!=LambdaRequired) continue;
       short ihp = res.h1, ihm = res.h2;
       CSHadronData &hp = hdrns[ihp], &hm = hdrns[ihm];
-      
 
       // ***** P AND theta BINNING
       // P and theta are taken @ RICH
@@ -606,7 +597,6 @@ void get_input_data_t1(){
 	abort();
       }
       PRp = fabs(PRp); PRm = fabs(PRm);
-      
       float tgXR, tgYR;
       tgXR = hp.tgXR; tgYR = hp.tgYR;
       double thRp = acos(1/sqrt(1.+ tgXR*tgXR + tgYR*tgYR));
@@ -629,14 +619,7 @@ void get_input_data_t1(){
       }
       if (p_bin_m==-1 && p_bin_p==-1 && t_bin_m==-1 && t_bin_p==-1)
 	continue;   // ***** BOTH m AND p OUT OF SCOPE
-	
-      // ***** theta Tcherenkov    
-      double th_c_p = hp.thC, th_c_m = hm.thC;
-      thc_K0_a->Fill(PRm,th_c_m);
-      thc_K0_a->Fill(PRp,th_c_p);
-      thc_L_a->Fill(PRm,th_c_m);
-      thc_L_a->Fill(PRp,th_c_p);
-      
+
       // ***** REJECT RICH PIPE: could be revisited: why both + and -?
       bool pipe = false;
       float pp_x = hp.XR, pp_y = hp.YR, pm_x = hm.XR, pm_y = hm.YR;
@@ -746,19 +729,16 @@ void get_input_data_t1(){
       if (p_bin_m!=-1 && t_bin_m!=-1  &&  // ***** FILLING NEGATIVE pE- *****
 	  id_p==0 /* ID-BASED SPECTATOR pS+ SELECTION */) {
 	if      (Lambda==0) {
-	  thc_K0->Fill(PRm,th_c_m);
 	  h[0][0][p_bin_m][t_bin_m]->Fill(res.m);
 	  h2[0][0][p_bin_m][t_bin_m]->Fill(alpha,pT);
 	}
 	else if (Lambda==-1) {
-	  thc_L->Fill(PRm,th_c_m);
 	  h[4][0][p_bin_m][t_bin_m]->Fill(res.m);
 	  h2[4][0][p_bin_m][t_bin_m]->Fill(alpha,pT);
 	}
 	for(int i = 0; i<5; i++){
 	  if(id_m == id_lst[i]){
 	    if      (Lambda==0) {
-	      thc_K0->Fill(PRm,th_c_m);
 	      if(id_m!=5){
 		h[0][id_m+1][p_bin_m][t_bin_m]->Fill(res.m);
 		h2[0][id_m+1][p_bin_m][t_bin_m]->Fill(alpha,pT);
@@ -768,7 +748,6 @@ void get_input_data_t1(){
 	      }
 	    }
 	    else if (Lambda==-1) {
-	      thc_L->Fill(PRm,th_c_m);
 	      if(id_m!=5){
 		h[4][id_m+1][p_bin_m][t_bin_m]->Fill(res.m);
 		h2[4][id_m+1][p_bin_m][t_bin_m]->Fill(alpha,pT);
@@ -783,19 +762,16 @@ void get_input_data_t1(){
       if (p_bin_p!=-1 && t_bin_p!=-1 &&  // ***** FILLING POSITIVE pE+ *****
 	  id_m==0 /* ID-BASED SPECTATOR pS- SELECTION = pi-ID */) {
 	if      (Lambda==0) {
-	  thc_K0->Fill(PRp,th_c_p);
 	  h[1][0][p_bin_p][t_bin_p]->Fill(res.m);
 	  h2[1][0][p_bin_p][t_bin_p]->Fill(alpha,pT);
 	}
 	else if (Lambda==1) {
-	  thc_L->Fill(PRp,th_c_p);
 	  h[5][0][p_bin_p][t_bin_p]->Fill(res.m);
 	  h2[5][0][p_bin_p][t_bin_p]->Fill(alpha,pT);
 	}
 	for(int i = 0; i<5; i++){
 	  if(id_p == id_lst[i]){
 	    if      (Lambda==0) {
-	      thc_K0->Fill(PRp,th_c_p);
 	      if(id_p!=5){
 		h[1][id_p+1][p_bin_p][t_bin_p]->Fill(res.m);
 		h2[1][id_p+1][p_bin_p][t_bin_p]->Fill(alpha,pT);
@@ -805,7 +781,6 @@ void get_input_data_t1(){
 	      }
 	    }
 	    else if (Lambda==1) {
-	      thc_L->Fill(PRp,th_c_p);
 	      if(id_p!=5){
 		h[5][id_p+1][p_bin_p][t_bin_p]->Fill(res.m);
 		h2[5][id_p+1][p_bin_p][t_bin_p]->Fill(alpha,pT);
@@ -911,7 +886,7 @@ void get_input_data_t2(){
       else continue;
       short ihp = res.h1, ihm = res.h2;
       CSHadronData &hp = hdrns[ihp], &hm = hdrns[ihm];
-      
+
       // ***** P AND theta BINNING
       // P and theta are taken @ RICH
       double PRp = hp.qP, PRm = hm.qP;
@@ -950,11 +925,6 @@ void get_input_data_t2(){
       }
       if (p_bin_m==-1 && p_bin_p==-1 && t_bin_m==-1 && t_bin_p==-1)
 	continue;   // ***** BOTH p AND m OUT OF SCOPE
-	
-      // ***** theta Tcherenkov    
-      double th_c_p = hp.thC, th_c_m = hm.thC;
-      thc_phi_a->Fill(PRm,th_c_m);
-      thc_phi_a->Fill(PRp,th_c_p);
 
       // ***** REJECT RICH PIPE: could be revisited: why both + and -?
       bool pipe = false;
@@ -1037,7 +1007,6 @@ void get_input_data_t2(){
       // 				if(TMath::Abs(lv_ks1.Mag()-0.89166)>0.05){
       // 				if(lv_ks1.Mag()-0.89166<-0.05){
       //					if(TMath::Abs(lv_ks2.Mag()-0.89166)>0.03){
-	thc_phi->Fill(PRm,th_c_m);
 	h[2+IE][0][p_bin_m][t_bin_m]->Fill(res.m);
 	h2[2+IE][0][p_bin_m][t_bin_m]->Fill(alpha,pT);
 	for(int i = 0; i<5; i++){
@@ -1072,7 +1041,6 @@ void get_input_data_t2(){
 	//				if(TMath::Abs(lv_ks1.Mag()-0.89166)>0.03){
 	// 					if(TMath::Abs(lv_ks2.Mag()-0.89166)>0.05){
 	// 					if(lv_ks2.Mag()-0.89166<-0.05){
-	thc_phi->Fill(PRp,th_c_p);
 	h[3+IE][0][p_bin_p][t_bin_p]->Fill(res.m);
 	if (p_bin_p==7 && t_bin_p==1 && .995<res.m && res.m<1.042 && ie==0) {
 	  static FILE *fp = 0; static int nevts = 0;
@@ -1176,41 +1144,9 @@ void get_plots(){
     }
   }
 
-}
 
-/**********************************************************************/
-void cols_theta(){
-	for(int i = 0; i<6; i++){    // Channels
-		for(int j = 0; j<5; j++){    // a,pi,K,p,u  and background
-			//cout << "i = " << i << "j = " << j << endl;
-		//printf("================");
-      			for(int p = 0; p<Np; p++){
-				
-		      	
-				h[i][j][p][0]->Add(h[i][j][p][1]);
-				h[i][j][p][0]->Add(h[i][j][p][2]);
-				h[i][j][p][0]->Add(h[i][j][p][3]);
-				h[i][j][p][1]->Add(h[i][j][p][2]);
-				h[i][j][p][2]->Add(h[i][j][p][1]);
-			}
-		}
-	}
-}
 
-/**********************************************************************/
-void merge_h_charge(){
-  for(int i = 0; i<6; i++){      //6
-    for(int j = 0; j<5; j++){  //4
-      for(int p = 0; p<Np;p++){
-        for(int t = 0; t<Nt; t++){	
-          if( i%2 == 0 ) 
-              	h[i][j][p][t]->Add(h[i+1][j][p][t]);
-          else 	
-          	h[i][j][p][t] =  h[i-1][j][p][t];		
-          }
-        }
-      }
-    }
+
 }
 /**********************************************************************/
 // - "fit_table_(K0|phi|Lambda)":
@@ -1450,7 +1386,7 @@ void fit_table_K0(int cc){
 	  int ret = minu.migrad();
 	  if (ret) {
 	    ret = minu.migrad();
-	    if (!ret) printf("=== Sucessful r\E9essai\n");
+	    if (!ret) printf("=== Sucessful réessai\n");
 	  }
 	  if (!ret) {
 	    minu.improve(); improved = 1;
@@ -1683,7 +1619,7 @@ void fit_table_phi(int cc){
       RooFormulaVar N_a_b("N_a_b","N_pi_b + N_k_b + N_p_b + N_u_b",RooArgSet(N_pi_b,N_k_b,N_p_b,N_u_b));
 
 
-      //bedingung nur f\FCr t = 2
+      //bedingung nur für t = 2
 
       if(p>0){
 	double offset1 = 1;
@@ -1766,18 +1702,6 @@ void fit_table_phi(int cc){
 	int iter = 0, status, improved; double nLLMn = 0; do {
 	  if(iter>0){
 	    if(t == 0){
-	      if (p==0 || p==1) {
-		N_pi_s.setVal(0.97*N_pi_s.getVal());
-		N_k_s.setVal( 1.08*N_k_s.getVal() );
-		N_p_s.setVal( 0.89*N_p_s.getVal() );
-		N_u_s.setVal( 0.97*N_u_s.getVal() );	      
-	      }
-	      else{
-		N_pi_s.setVal(0.95*N_pi_s.getVal());
-		N_k_s.setVal( 1.05*N_k_s.getVal() );
-		N_p_s.setVal( 0.90*N_p_s.getVal() );
-		N_u_s.setVal( 0.95*N_u_s.getVal() );	      
-	      }
 	      N_pi_s.setVal(0.95*N_pi_s.getVal());
 	      N_k_s.setVal( 1.05*N_k_s.getVal() );
 	      N_p_s.setVal( 0.90*N_p_s.getVal() );
@@ -1805,7 +1729,7 @@ void fit_table_phi(int cc){
 	  int ret = minu.migrad();
 	  if (ret) {
 	    ret = minu.migrad();
-	    if (!ret) printf("=== Sucessful r\E9essai\n");
+	    if (!ret) printf("=== Sucessful réessai\n");
 	  }
 	  if (!ret) {
 	    minu.improve(); improved = 1;
@@ -2023,7 +1947,6 @@ void fit_table_Lambda(int cc){
   for(int t = 0; t<Nt; t++){
     for(int p = 0; p<Np; p++){      // ********** LOOP ON [p][t] BINS
       if(t==3 && p>6) continue;
-      if(p<2)   continue;// ***** Skip if p < 7 GeV, see "p_bins" in header file
       Int_t ent = h[4+cc][0][p][t]->GetEntries(); //[p][t]
       cout << setw(7) << "theta:" << setw(3)<< t   << setw(7) << "mom:" << setw(3) << p << setw(7) << "Ent:" << ent << endl;
       if (ent<25)                   // ***** SKIP IF #ENTRIES TOO LOW
@@ -2345,7 +2268,7 @@ void fit_table_Lambda(int cc){
 	  int ret = minu.migrad();
 	  if (ret) {
 	    ret = minu.migrad();
-	    if (!ret) printf("=== Sucessful r\E9essai\n");
+	    if (!ret) printf("=== Sucessful réessai\n");
 	  }
 	  if (!ret) {
 	    minu.improve(); improved = 1;
@@ -2733,7 +2656,7 @@ void print_table(){
 	double sigB, dSigB; if (B) {
 	  double S = (N_id[i][1][p][t]+N_id[i][2][p][t]+N_id[i][3][p][t]+N_id[i][4][p][t])*fS;
 	  // dfdSj = 1/B
-	  // df/dB = -S/B\A0^2
+	  // df/dB = -S/B ^2
 	  double dfdSj = 1/B;
 	  double dfdB = -S/2/B/B;
 	  double dS2 = 0, dSB = 0; for (int ll = 0; ll<4; ll++) {
@@ -2957,7 +2880,6 @@ void set_plot_style(){
 void bookKineHistos()
 {
   double ZMn = -4968, ZMx = 2322; int nZbins = (ZMx-ZMn)*4;
-  double thcMn = 0, thcMx = 60; int nthcbins = (thcMx-thcMn)*4; 
   ZMn /= 10; ZMx /=10;
   char tag[] =
     "D/#deltaD>4,c#theta>0.99997,pT>20MeV";
@@ -3011,10 +2933,6 @@ void bookKineHistos()
     Rb_L =   new TH1D("Rb_L",  title.c_str(),32,-.5,31.5);
     title = string("#Lambda - ")+string(tag)+string(";pTracks in top RICH");
     Rt_L =   new TH1D("Rt_L",  title.c_str(),32,-.5,31.5);
-    thc_K0 =  new TH2D("thc_K0", "#theta c VS. P r for #pi;P(GeV);#theta(mrad)",nthcbins,thcMn,thcMx,100,0,50);
-    thc_L =  new TH2D("thc_L", "#theta c VS. P r for p;P(GeV);#theta(mrad)",nthcbins,thcMn,thcMx,100,0,50);	
-    thc_K0_a =  new TH2D("thc_K0_a", "#theta c VS. P for #pi;P(GeV);#theta(mrad)",nthcbins,thcMn,thcMx,100,0,50);
-    thc_L_a =  new TH2D("thc_L_a", "#theta c VS. P for p;P(GeV);#theta(mrad)",nthcbins,thcMn,thcMx,100,0,50);	
   }
   else {
     snprintf(tag,len,"pT>%.0fMeV",pT_cuts[2]*1000);
@@ -3068,8 +2986,6 @@ void bookKineHistos()
     Rb_Ephi = new TH1D("Rb_Ephi",title.c_str(),32,-.5,31.5);
     title = string("Excl. #phi - ")+string(tag)+string(";pTracks in top RICH");
     Rt_Ephi = new TH1D("Rt_Ephi",title.c_str(),32,-.5,31.5);
-    thc_phi =  new TH2D("thc_phi", "#theta c VS. P r for K;P(GeV);#theta(mrad)",nthcbins,thcMn,thcMx,100,0,50);
-    thc_phi_a =  new TH2D("thc_phi_a", "#theta c VS. P r for K;P(GeV);#theta(mrad)",nthcbins,thcMn,thcMx,100,0,50);  
   }
 }
 void writeKineHistos(const char *particleName)
@@ -3080,14 +2996,12 @@ void writeKineHistos(const char *particleName)
     am_K0p->Write(); am_K0m->Write();
     DdD_K0->Write(); cth_K0->Write(); pT_K0->Write();
     Tr_K0->Write();  Rb_K0->Write();  Rt_K0->Write();
-    thc_K0->Write(); thc_K0_a->Write();
   }
   else if (!strncmp(particleName,"Lambda",6)) {
     am_all->Write(); Z_all->Write();  XY_all->Write();
     am_L->Write();   Z_L->Write();    XY_L->Write();
     DdD_L->Write();  cth_L->Write();  pT_L->Write();
     Tr_L->Write();   Rb_L->Write();   Rt_L->Write();
-    thc_L->Write();  thc_L_a->Write();  
   }
   else if (!strncmp(particleName,"Iphi",6)) {
     pT_Incl->Write(); dE_Incl->Write();
@@ -3095,7 +3009,6 @@ void writeKineHistos(const char *particleName)
     pT_Iphi->Write(); dE_Iphi->Write();
     am_Iphi->Write(); Z_Iphi->Write(); XY_Iphi->Write();
     Tr_Iphi->Write(); Rb_Iphi->Write(); Rt_Iphi->Write();
-    thc_phi->Write();thc_phi_a->Write();
   }
   else if (!strncmp(particleName,"Ephi",6)) {
     pT_Excl->Write(); dE_Excl->Write();
