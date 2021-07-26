@@ -19,7 +19,7 @@ sed -i 's+out_file: rich.root+out_file: rich_08_10.root+g' options_fit/options_f
 # ------------------------------------------------------------------------------------
 cp Plots_files/files_fit/hist_*_08_10.root .   
 fit_table -f options_fit/options_fit.dat -v fit |& tee log_fit.log
-mv *.root *.txt *.pdf *.log ./results_fit_normal/P08_10
+mv *.root *.txt *.pdf *.log table ./results_fit_normal/P08_10
 # ------------------------------------------------------------------------------------
 sed -i 's+hist_file_iphi: ./hist_iphi_08_10.root+hist_file_iphi: ./hist_iphi.root+g' options_fit/options_fit.dat
 sed -i 's+hist_file_ephi: ./hist_ephi_08_10.root+hist_file_ephi: ./hist_ephi.root+g' options_fit/options_fit.dat
@@ -38,7 +38,7 @@ sed -i 's+out_file: rich.root+out_file: rich_07_10.root+g' options_fit/options_f
 # ------------------------------------------------------------------------------------  
 cp Plots_files/files_fit/hist_*_07_10.root . 
 fit_table -f options_fit/options_fit.dat -v fit |& tee log_fit.log
-mv *.root *.txt *.pdf *.log ./results_fit_normal/P07_10
+mv *.root *.txt *.pdf *.log table ./results_fit_normal/P07_10
 # ------------------------------------------------------------------------------------
 sed -i 's+hist_file_iphi: ./hist_iphi_07_10.root+hist_file_iphi: ./hist_iphi.root+g' options_fit/options_fit.dat
 sed -i 's+hist_file_ephi: ./hist_ephi_07_10.root+hist_file_ephi: ./hist_ephi.root+g' options_fit/options_fit.dat
@@ -57,7 +57,7 @@ sed -i 's+out_file: rich.root+out_file: rich_06_10.root+g' options_fit/options_f
 # ------------------------------------------------------------------------------------  
 cp Plots_files/files_fit/hist_*_06_10.root . 
 fit_table -f options_fit/options_fit.dat -v fit |& tee log_fit.log
-mv *.root *.txt *.pdf *.log ./results_fit_normal/P06_10
+mv *.root *.txt *.pdf *.log table ./results_fit_normal/P06_10
 # ------------------------------------------------------------------------------------
 sed -i 's+hist_file_iphi: ./hist_iphi_06_10.root+hist_file_iphi: ./hist_iphi.root+g' options_fit/options_fit.dat
 sed -i 's+hist_file_ephi: ./hist_ephi_06_10.root+hist_file_ephi: ./hist_ephi.root+g' options_fit/options_fit.dat
@@ -76,7 +76,7 @@ sed -i 's+out_file: rich.root+out_file: rich_05_10.root+g' options_fit/options_f
 # ------------------------------------------------------------------------------------ 
 cp Plots_files/files_fit/hist_*_05_10.root .  
 fit_table -f options_fit/options_fit.dat -v fit |& tee log_fit.log
-mv *.root *.txt *.pdf *.log ./results_fit_normal/P05_10
+mv *.root *.txt *.pdf *.log table ./results_fit_normal/P05_10
 # ------------------------------------------------------------------------------------
 sed -i 's+hist_file_iphi: ./hist_iphi_05_10.root+hist_file_iphi: ./hist_iphi.root+g' options_fit/options_fit.dat
 sed -i 's+hist_file_ephi: ./hist_ephi_05_10.root+hist_file_ephi: ./hist_ephi.root+g' options_fit/options_fit.dat

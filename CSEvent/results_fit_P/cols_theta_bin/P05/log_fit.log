@@ -10,8 +10,7 @@ data_firstfile_nb: 273125
 data_lastfile_nb: 273605
 fit_type: all
 merged_h: false
-merge_theta_bin: true
-remove_richpipe: false
+cols_theta_bin: true
 hist_file_iphi: ./hist_iphi.P05.root
 hist_file_ephi: ./hist_ephi.P05.root
 hist_file_K0: ./hist_K0.P05.root
@@ -27,13 +26,13 @@ LH_K_p: 1.06
 LH_K_bg: 2.0
 LH_bthr_p_pi: 1.
 LH_bthr_p_K: 1.
+LH_athr_p_pi: 1.
+LH_athr_p_K: 1.
+LH_athr_p_bg: 1.
 LH_bthr_p_pi_bg: 2.3
 LH_bthr_p_K_bg: 3.0
 LH_bthr_m_pi_bg: 2.2
 LH_bthr_m_K_bg: 2.9
-LH_athr_p_pi: 1.
-LH_athr_p_K: 1.
-LH_athr_p_bg: 1.
 max_retry: 100
 line_width: 2
 sidebins: false
@@ -46,112 +45,100 @@ lh_cut[i][j]:
 [4][0]  2.30 [4][1]  3.00 [4][2]  2.20 [4][3]  2.90 [4][4] -1.00 [4][5] -1.00 
 
 Fits of K0 sample for pi- efficiency:
- theta:  0   mom:  0   Ent:168
-=>  1 iters (-1780.36) -> 3
- theta:  0   mom:  1   Ent:324
-=>  2 iters (-4042.26) -> 3
- theta:  0   mom:  2   Ent:797
+ theta:  0   mom:  0   Ent:28008
+=>  1 iters (-555363.21) -> 3
+ theta:  0   mom:  1   Ent:23215
+=>  1 iters (-475216.38) -> 3
+ theta:  0   mom:  2   Ent:27292
+=>  1 iters (-577260.64) -> 3
+ theta:  0   mom:  3   Ent:14238
 === Sucessful r9essai
+=>  1 iters (-284360.19) -> 3
+ theta:  0   mom:  4   Ent:6259
+=>  1 iters (-115102.22) -> 3
+ theta:  0   mom:  5   Ent:10436
+=>  1 iters (-201684.35) -> 3
+ theta:  0   mom:  6   Ent:8420
 === Sucessful r9essai
+=>  1 iters (-158216.56) -> 3
+ theta:  0   mom:  7   Ent:6793
+=>  1 iters (-123461.24) -> 3
+ theta:  0   mom:  8   Ent:7908
+=>  1 iters (-142666.51) -> 3
+ theta:  0   mom:  9   Ent:5922
+=>  1 iters (-101200.49) -> 3
+ theta:  0   mom: 10   Ent:3069
+=>  1 iters (-48066.12) -> 3
+ theta:  0   mom: 11   Ent:3809
+=>  1 iters (-60703.96) -> 3
+ theta:  0   mom: 12   Ent:4350
+=>  1 iters (-68345.60) -> 3
+ theta:  0   mom: 13   Ent:2756
+=>  1 iters (-40977.53) -> 3
+ theta:  0   mom: 14   Ent:2697
+=>  1 iters (-38445.29) -> 3
+ theta:  1   mom:  0   Ent:21717
+=>  1 iters (-415480.86) -> 3
+ theta:  1   mom:  1   Ent:21998
+=>  1 iters (-447528.65) -> 3
+ theta:  1   mom:  2   Ent:26292
+=>  1 iters (-554060.82) -> 3
+ theta:  1   mom:  3   Ent:13604
 === Sucessful r9essai
-=> 12 iters (-11523.11) -> 3
- theta:  0   mom:  3   Ent:607
-=>  1 iters (-8379.33) -> 3
- theta:  0   mom:  4   Ent:336
+=>  3 iters (-270499.55) -> 3
+ theta:  1   mom:  4   Ent:5916
+=>  1 iters (-108066.69) -> 3
+ theta:  1   mom:  5   Ent:9773
+=>  1 iters (-187592.54) -> 3
+ theta:  1   mom:  6   Ent:7772
+=>  1 iters (-144790.55) -> 3
+ theta:  1   mom:  7   Ent:6228
+=>  1 iters (-112168.46) -> 3
+ theta:  1   mom:  8   Ent:7130
+=>  1 iters (-126909.15) -> 3
+ theta:  1   mom:  9   Ent:5243
+=>  1 iters (-88342.21) -> 3
+ theta:  1   mom: 10   Ent:2698
+=>  1 iters (-41647.60) -> 3
+ theta:  1   mom: 11   Ent:3285
+=>  1 iters (-51284.37) -> 3
+ theta:  1   mom: 12   Ent:3612
+=>  1 iters (-55303.30) -> 3
+ theta:  1   mom: 13   Ent:2226
+=>  1 iters (-32238.40) -> 3
+ theta:  1   mom: 14   Ent:2015
+=>  2 iters (-27616.30) -> 3
+ theta:  2   mom:  0   Ent:40898
+=>  1 iters (-828971.85) -> 3
+ theta:  2   mom:  1   Ent:39213
+=>  1 iters (-841046.16) -> 3
+ theta:  2   mom:  2   Ent:43157
+=>  2 iters (-951872.54) -> 3
+ theta:  2   mom:  3   Ent:20171
+=>  1 iters (-416376.11) -> 3
+ theta:  2   mom:  4   Ent:8286
+=>  1 iters (-156868.15) -> 3
+ theta:  2   mom:  5   Ent:13020
+=>  1 iters (-256877.15) -> 3
+ theta:  2   mom:  6   Ent:9761
+=>  1 iters (-185764.90) -> 3
+ theta:  2   mom:  7   Ent:7456
 === Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=> 41 iters (-4365.67) -> 3
- theta:  0   mom:  5   Ent:652
-=>  2 iters (-9072.17) -> 3
- theta:  0   mom:  6   Ent:646
-=>  3 iters (-8940.00) -> 3
- theta:  0   mom:  7   Ent:565
-=== Sucessful r9essai
-=== Sucessful r9essai
-=> 101 iters (-7534.69) -> 2
- theta:  0   mom:  8   Ent:778
-=>  1 iters (-10871.69) -> 3
- theta:  0   mom:  9   Ent:679
-=>  1 iters (-8840.80) -> 3
- theta:  0   mom: 10   Ent:371
-=>  1 iters (-4291.41) -> 3
- theta:  0   mom: 11   Ent:524
-=== Sucessful r9essai
-=>  2 iters (-6535.61) -> 3
- theta:  0   mom: 12   Ent:738
-=>  1 iters (-9367.91) -> 3
- theta:  0   mom: 13   Ent:530
-=>  1 iters (-6223.02) -> 3
- theta:  0   mom: 14   Ent:682
-=>  1 iters (-8012.46) -> 3
- theta:  1   mom:  0   Ent:2536
-=>  1 iters (-40451.34) -> 3
- theta:  1   mom:  1   Ent:4783
-=>  1 iters (-84032.09) -> 3
- theta:  1   mom:  2   Ent:9427
-=>  1 iters (-179605.10) -> 3
- theta:  1   mom:  3   Ent:7037
-=>  1 iters (-131291.34) -> 3
- theta:  1   mom:  4   Ent:3546
-=>  1 iters (-61256.90) -> 3
- theta:  1   mom:  5   Ent:6526
-=>  1 iters (-120562.83) -> 3
- theta:  1   mom:  6   Ent:5783
-=>  1 iters (-104908.63) -> 3
- theta:  1   mom:  7   Ent:5000
-=>  5 iters (-88307.12) -> 3
- theta:  1   mom:  8   Ent:6003
-=>  1 iters (-105441.73) -> 3
- theta:  1   mom:  9   Ent:4698
-=>  1 iters (-78560.25) -> 3
- theta:  1   mom: 10   Ent:2487
-=>  1 iters (-38041.11) -> 3
- theta:  1   mom: 11   Ent:3104
-=>  1 iters (-48310.56) -> 3
- theta:  1   mom: 12   Ent:3459
-=>  1 iters (-52832.56) -> 3
- theta:  1   mom: 13   Ent:2169
-=>  1 iters (-31360.59) -> 3
- theta:  1   mom: 14   Ent:1981
-=>  1 iters (-27133.97) -> 3
- theta:  2   mom:  0   Ent:19181
-=>  1 iters (-360046.40) -> 3
- theta:  2   mom:  1   Ent:17215
-=>  1 iters (-341029.15) -> 3
- theta:  2   mom:  2   Ent:16865
-=>  1 iters (-340905.91) -> 3
- theta:  2   mom:  3   Ent:6567
-=>  1 iters (-120774.07) -> 3
- theta:  2   mom:  4   Ent:2370
-=== Sucessful r9essai
-=>  1 iters (-38996.78) -> 3
- theta:  2   mom:  5   Ent:3247
-=>  1 iters (-54888.79) -> 3
- theta:  2   mom:  6   Ent:1989
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=> 47 iters (-31332.61) -> 3
- theta:  2   mom:  7   Ent:1228
-=>  1 iters (-17886.56) -> 3
- theta:  2   mom:  8   Ent:1127
-=>  1 iters (-15589.05) -> 3
- theta:  2   mom:  9   Ent:545
-=>  1 iters (-6508.33) -> 3
- theta:  2   mom: 10   Ent:211
-=>  1 iters (-2200.87) -> 3
- theta:  2   mom: 11   Ent:181
-=== Sucessful r9essai
-=== Sucessful r9essai
-=> 11 iters (-1693.69) -> 3
- theta:  2   mom: 12   Ent:153
-=>  2 iters (-1330.09) -> 3
- theta:  2   mom: 13   Ent:57
-=>  1 iters (-403.55) -> 3
- theta:  2   mom: 14   Ent:34
-=> 101 iters (-181.59) -> 1
+=>  1 iters (-136528.61) -> 3
+ theta:  2   mom:  8   Ent:8257
+=>  1 iters (-148750.79) -> 3
+ theta:  2   mom:  9   Ent:5788
+=>  1 iters (-98244.38) -> 3
+ theta:  2   mom: 10   Ent:2909
+=>  1 iters (-45289.87) -> 3
+ theta:  2   mom: 11   Ent:3466
+=>  1 iters (-54281.53) -> 3
+ theta:  2   mom: 12   Ent:3765
+=>  1 iters (-57788.26) -> 3
+ theta:  2   mom: 13   Ent:2283
+=>  1 iters (-33119.97) -> 3
+ theta:  2   mom: 14   Ent:2049
+=>  2 iters (-28100.22) -> 3
  theta:  3   mom:  0   Ent:6123
 =>  1 iters (-108126.94) -> 3
  theta:  3   mom:  1   Ent:893
@@ -165,113 +152,99 @@ Fits of K0 sample for pi- efficiency:
  theta:  3   mom:  6   Ent:2
 
 Fits of K0 sample for pi+ efficiency:
- theta:  0   mom:  0   Ent:163
-=> 101 iters (-1778.03) -> 2
- theta:  0   mom:  1   Ent:332
-=>  1 iters (-4068.96) -> 3
- theta:  0   mom:  2   Ent:814
-=>  1 iters (-11787.70) -> 3
- theta:  0   mom:  3   Ent:614
-=>  1 iters (-8507.71) -> 3
- theta:  0   mom:  4   Ent:288
+ theta:  0   mom:  0   Ent:28198
+=>  1 iters (-559567.36) -> 3
+ theta:  0   mom:  1   Ent:22960
+=>  1 iters (-469412.55) -> 3
+ theta:  0   mom:  2   Ent:27556
 === Sucessful r9essai
-=>  1 iters (-3613.64) -> 3
- theta:  0   mom:  5   Ent:626
-=>  1 iters (-8755.89) -> 3
- theta:  0   mom:  6   Ent:580
-=>  5 iters (-8014.59) -> 3
- theta:  0   mom:  7   Ent:534
+=>  1 iters (-583204.26) -> 3
+ theta:  0   mom:  3   Ent:14089
+=>  6 iters (-281497.46) -> 3
+ theta:  0   mom:  4   Ent:5981
+=>  1 iters (-109037.27) -> 3
+ theta:  0   mom:  5   Ent:10213
+=>  2 iters (-196525.74) -> 3
+ theta:  0   mom:  6   Ent:8290
+=>  1 iters (-155616.72) -> 3
+ theta:  0   mom:  7   Ent:6730
+=>  1 iters (-121556.08) -> 3
+ theta:  0   mom:  8   Ent:7569
+=>  1 iters (-135570.76) -> 3
+ theta:  0   mom:  9   Ent:6025
+=>  1 iters (-103422.35) -> 3
+ theta:  0   mom: 10   Ent:3124
+=>  1 iters (-48853.89) -> 3
+ theta:  0   mom: 11   Ent:3765
+=>  1 iters (-59442.91) -> 3
+ theta:  0   mom: 12   Ent:4301
+=>  1 iters (-67854.12) -> 3
+ theta:  0   mom: 13   Ent:2789
+=>  1 iters (-40656.89) -> 3
+ theta:  0   mom: 14   Ent:2690
+=>  1 iters (-37801.50) -> 3
+ theta:  1   mom:  0   Ent:21990
+=>  1 iters (-421339.73) -> 3
+ theta:  1   mom:  1   Ent:21704
+=>  1 iters (-441015.31) -> 3
+ theta:  1   mom:  2   Ent:26539
+=>  1 iters (-559648.23) -> 3
+ theta:  1   mom:  3   Ent:13453
+=>  1 iters (-267573.89) -> 3
+ theta:  1   mom:  4   Ent:5688
+=>  1 iters (-103075.20) -> 3
+ theta:  1   mom:  5   Ent:9584
+=>  1 iters (-183067.69) -> 3
+ theta:  1   mom:  6   Ent:7708
+=>  2 iters (-143454.03) -> 3
+ theta:  1   mom:  7   Ent:6195
+=>  1 iters (-110879.53) -> 3
+ theta:  1   mom:  8   Ent:6839
+=>  1 iters (-120980.45) -> 3
+ theta:  1   mom:  9   Ent:5382
+=>  1 iters (-91094.61) -> 3
+ theta:  1   mom: 10   Ent:2721
+=>  1 iters (-41768.12) -> 3
+ theta:  1   mom: 11   Ent:3267
+=>  1 iters (-50684.66) -> 3
+ theta:  1   mom: 12   Ent:3630
+=>  1 iters (-55921.14) -> 3
+ theta:  1   mom: 13   Ent:2269
+=>  1 iters (-32275.06) -> 3
+ theta:  1   mom: 14   Ent:2060
+=>  1 iters (-27904.33) -> 3
+ theta:  2   mom:  0   Ent:41409
+=>  1 iters (-840465.04) -> 3
+ theta:  2   mom:  1   Ent:38792
+=>  2 iters (-831640.01) -> 3
+ theta:  2   mom:  2   Ent:43390
+=>  1 iters (-957136.79) -> 3
+ theta:  2   mom:  3   Ent:19936
 === Sucessful r9essai
+=>  1 iters (-411573.94) -> 3
+ theta:  2   mom:  4   Ent:7989
+=>  1 iters (-149807.35) -> 3
+ theta:  2   mom:  5   Ent:12790
+=>  1 iters (-251132.82) -> 3
+ theta:  2   mom:  6   Ent:9662
+=>  1 iters (-183702.64) -> 3
+ theta:  2   mom:  7   Ent:7413
+=>  1 iters (-134709.05) -> 3
+ theta:  2   mom:  8   Ent:7878
+=>  1 iters (-140905.09) -> 3
+ theta:  2   mom:  9   Ent:5925
+=>  1 iters (-100729.41) -> 3
+ theta:  2   mom: 10   Ent:2927
+=>  1 iters (-45180.51) -> 3
+ theta:  2   mom: 11   Ent:3450
+=>  1 iters (-53669.76) -> 3
+ theta:  2   mom: 12   Ent:3796
+=>  1 iters (-58733.19) -> 3
+ theta:  2   mom: 13   Ent:2320
 === Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=> 101 iters (-7053.02) -> 2
- theta:  0   mom:  8   Ent:728
-=>  1 iters (-9975.85) -> 3
- theta:  0   mom:  9   Ent:642
-=>  1 iters (-8406.84) -> 3
- theta:  0   mom: 10   Ent:403
-=>  1 iters (-4821.61) -> 3
- theta:  0   mom: 11   Ent:498
-=>  2 iters (-5990.12) -> 3
- theta:  0   mom: 12   Ent:671
-=== Sucessful r9essai
-=>  8 iters (-8437.77) -> 3
- theta:  0   mom: 13   Ent:520
-=>  2 iters (-5910.71) -> 3
- theta:  0   mom: 14   Ent:630
-=>  1 iters (-7220.00) -> 3
- theta:  1   mom:  0   Ent:2571
-=>  1 iters (-41127.68) -> 3
- theta:  1   mom:  1   Ent:4616
-=>  1 iters (-80401.03) -> 3
- theta:  1   mom:  2   Ent:9688
-=>  1 iters (-185101.02) -> 3
- theta:  1   mom:  3   Ent:6970
-=>  1 iters (-130111.26) -> 3
- theta:  1   mom:  4   Ent:3387
-=== Sucessful r9essai
-=>  1 iters (-58287.46) -> 3
- theta:  1   mom:  5   Ent:6378
-=>  1 iters (-117218.63) -> 3
- theta:  1   mom:  6   Ent:5754
-=>  1 iters (-104230.50) -> 3
- theta:  1   mom:  7   Ent:4977
-=== Sucessful r9essai
-=>  1 iters (-87542.92) -> 3
- theta:  1   mom:  8   Ent:5800
-=>  1 iters (-101388.29) -> 3
- theta:  1   mom:  9   Ent:4839
-=>  1 iters (-81579.94) -> 3
- theta:  1   mom: 10   Ent:2515
-=>  1 iters (-38392.67) -> 3
- theta:  1   mom: 11   Ent:3084
-=>  1 iters (-47721.83) -> 3
- theta:  1   mom: 12   Ent:3464
-=>  1 iters (-53128.29) -> 3
- theta:  1   mom: 13   Ent:2218
-=>  1 iters (-31534.80) -> 3
- theta:  1   mom: 14   Ent:2030
-=>  1 iters (-27492.33) -> 3
- theta:  2   mom:  0   Ent:19419
-=>  1 iters (-365073.22) -> 3
- theta:  2   mom:  1   Ent:17088
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=> 16 iters (-338714.92) -> 3
- theta:  2   mom:  2   Ent:16851
-=>  1 iters (-340422.16) -> 3
- theta:  2   mom:  3   Ent:6483
-=>  1 iters (-119179.87) -> 3
- theta:  2   mom:  4   Ent:2301
-=== Sucessful r9essai
-=> 101 iters (-37270.04) -> 2
- theta:  2   mom:  5   Ent:3206
-=>  1 iters (-53904.80) -> 3
- theta:  2   mom:  6   Ent:1954
-=>  1 iters (-30761.28) -> 3
- theta:  2   mom:  7   Ent:1218
-=>  1 iters (-17449.94) -> 3
- theta:  2   mom:  8   Ent:1039
-=>  1 iters (-14122.85) -> 3
- theta:  2   mom:  9   Ent:543
-=>  1 iters (-6307.50) -> 3
- theta:  2   mom: 10   Ent:206
-=>  1 iters (-2023.97) -> 3
- theta:  2   mom: 11   Ent:183
-=>  5 iters (-1695.72) -> 3
- theta:  2   mom: 12   Ent:166
-=>  2 iters (-1558.12) -> 3
- theta:  2   mom: 13   Ent:51
-=>  1 iters (-321.97) -> 3
- theta:  2   mom: 14   Ent:30
-=> 101 iters (-153.27) -> 1
+=>  2 iters (-33018.95) -> 3
+ theta:  2   mom: 14   Ent:2090
+=>  1 iters (-28317.20) -> 3
  theta:  3   mom:  0   Ent:6045
 =>  1 iters (-106599.57) -> 3
  theta:  3   mom:  1   Ent:924
@@ -284,328 +257,150 @@ Fits of K0 sample for pi+ efficiency:
  theta:  3   mom:  6   Ent:2
 
 Fits of PHI sample for K- efficiency:
- theta:  0   mom:  2   Ent:4897
-=== Sucessful r9essai
-=>  1 iters (-23985.73) -> 3
- theta:  0   mom:  3   Ent:2939
-=>  1 iters (-13027.59) -> 3
- theta:  0   mom:  4   Ent:1347
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
-=>  1 iters (-5244.04) -> 3
- theta:  0   mom:  5   Ent:2507
-=== Sucessful r9essai
-=>  2 iters (-11330.10) -> 3
- theta:  0   mom:  6   Ent:2019
-=>  3 iters (-8695.14) -> 3
- theta:  0   mom:  7   Ent:1757
-=>  2 iters (-7570.46) -> 3
- theta:  0   mom:  8   Ent:2044
-=>  1 iters (-9627.11) -> 3
- theta:  0   mom:  9   Ent:1644
-=== Sucessful r9essai
-=>  2 iters (-7214.22) -> 3
- theta:  0   mom: 10   Ent:862
-=>  1 iters (-3598.07) -> 3
- theta:  0   mom: 11   Ent:1041
-=> 13 iters (-4708.71) -> 3
- theta:  0   mom: 12   Ent:1238
-=== Sucessful r9essai
-=>  1 iters (-6020.50) -> 3
- theta:  0   mom: 13   Ent:719
-=>  1 iters (-3130.05) -> 3
- theta:  0   mom: 14   Ent:788
-=>  1 iters (-3686.99) -> 3
- theta:  1   mom:  2   Ent:59869
+ theta:  0   mom:  2   Ent:179489
 === Sucessful r9essai
 === Sucessful r9essai
 === Sucessful r9essai
 === Sucessful r9essai
 === Sucessful r9essai
 === Sucessful r9essai
+=> 30 iters (-1118271.13) -> 3
+ theta:  0   mom:  3   Ent:64036
 === Sucessful r9essai
+=>  5 iters (-387336.85) -> 3
+ theta:  0   mom:  4   Ent:23550
 === Sucessful r9essai
-=> 42 iters (-361989.74) -> 3
- theta:  1   mom:  3   Ent:31120
-=== Sucessful r9essai
-=>  2 iters (-185923.67) -> 3
- theta:  1   mom:  4   Ent:13215
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
+=>  9 iters (-131339.47) -> 3
+ theta:  0   mom:  5   Ent:36049
 === Sucessful r9essai
 === Sucessful r9essai
 === Sucessful r9essai
+=> 19 iters (-215727.58) -> 3
+ theta:  0   mom:  6   Ent:25782
+=== Sucessful r9essai
+=>  1 iters (-150811.26) -> 3
+ theta:  0   mom:  7   Ent:18804
+=>  3 iters (-105188.71) -> 3
+ theta:  0   mom:  8   Ent:19509
+=== Sucessful r9essai
+=== Sucessful r9essai
+=== Sucessful r9essai
+=> 15 iters (-112950.28) -> 3
+ theta:  0   mom:  9   Ent:12640
+=== Sucessful r9essai
+=>  9 iters (-69574.95) -> 3
+ theta:  0   mom: 10   Ent:5877
+=== Sucessful r9essai
+=== Sucessful r9essai
+=>  9 iters (-30317.88) -> 3
+ theta:  0   mom: 11   Ent:6358
+=>  1 iters (-33125.78) -> 3
+ theta:  0   mom: 12   Ent:6225
+=== Sucessful r9essai
+=>  1 iters (-31442.39) -> 3
+ theta:  0   mom: 13   Ent:3265
+=>  1 iters (-15821.41) -> 3
+ theta:  0   mom: 14   Ent:2690
+=>  1 iters (-13804.60) -> 3
+ theta:  1   mom:  2   Ent:171614
+=== Sucessful r9essai
+=>  2 iters (-1063997.81) -> 3
+ theta:  1   mom:  3   Ent:60880
+=>  7 iters (-365684.44) -> 3
+ theta:  1   mom:  4   Ent:22166
+=== Sucessful r9essai
+=>  2 iters (-122664.13) -> 3
+ theta:  1   mom:  5   Ent:33519
 === Sucessful r9essai
 === Sucessful r9essai
 === Sucessful r9essai
 === Sucessful r9essai
-=> 42 iters (-72372.67) -> 3
- theta:  1   mom:  5   Ent:22570
-=== Sucessful r9essai
-=> 12 iters (-133155.74) -> 3
- theta:  1   mom:  6   Ent:17991
-=>  3 iters (-103659.57) -> 3
- theta:  1   mom:  7   Ent:14028
-=>  2 iters (-76264.58) -> 3
- theta:  1   mom:  8   Ent:15312
-=>  2 iters (-86017.23) -> 3
- theta:  1   mom:  9   Ent:10087
 === Sucessful r9essai
 === Sucessful r9essai
 === Sucessful r9essai
-=> 16 iters (-53620.63) -> 3
- theta:  1   mom: 10   Ent:4764
-=>  1 iters (-23699.29) -> 3
- theta:  1   mom: 11   Ent:5109
-=>  1 iters (-25392.62) -> 3
- theta:  1   mom: 12   Ent:4864
+=> 17 iters (-198312.01) -> 3
+ theta:  1   mom:  6   Ent:23758
+=>  1 iters (-137466.20) -> 3
+ theta:  1   mom:  7   Ent:17045
+=>  9 iters (-93777.45) -> 3
+ theta:  1   mom:  8   Ent:17462
 === Sucessful r9essai
-=>  2 iters (-22647.13) -> 3
- theta:  1   mom: 13   Ent:2504
-=>  1 iters (-11312.38) -> 3
- theta:  1   mom: 14   Ent:1888
-=>  1 iters (-8923.97) -> 3
- theta:  2   mom:  2   Ent:111745
 === Sucessful r9essai
-=>  5 iters (-638118.83) -> 3
- theta:  2   mom:  3   Ent:29760
-=>  2 iters (-154381.78) -> 3
- theta:  2   mom:  4   Ent:8951
 === Sucessful r9essai
-=> 16 iters (-41164.69) -> 3
- theta:  2   mom:  5   Ent:10949
+=> 15 iters (-98836.45) -> 3
+ theta:  1   mom:  9   Ent:10996
+=>  2 iters (-59086.09) -> 3
+ theta:  1   mom: 10   Ent:5015
 === Sucessful r9essai
-=>  1 iters (-52164.73) -> 3
- theta:  2   mom:  6   Ent:5767
-=>  2 iters (-25728.07) -> 3
- theta:  2   mom:  7   Ent:3017
+=>  3 iters (-25026.14) -> 3
+ theta:  1   mom: 11   Ent:5317
 === Sucessful r9essai
-=>  4 iters (-12625.87) -> 3
- theta:  2   mom:  8   Ent:2150
-=>  1 iters (-8749.30) -> 3
- theta:  2   mom:  9   Ent:909
-=>  1 iters (-3436.45) -> 3
- theta:  2   mom: 10   Ent:251
-Eff+/-dEff = 0.98+/-0.24 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.24 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.24 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-Eff+/-dEff = 0.98+/-0.25 >> 0.02
-=> 101 iters (-710.75) -> 3
- theta:  2   mom: 11   Ent:208
-Eff+/-dEff = 0.87+/-0.57 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-Eff+/-dEff = 0.87+/-0.58 >> 0.07
-=> 101 iters (-501.53) -> 3
- theta:  2   mom: 12   Ent:123
-=>  1 iters (-279.88) -> 3
- theta:  2   mom: 13   Ent:42
-=>  1 iters (-64.03) -> 3
- theta:  2   mom: 14   Ent:14
+=>  2 iters (-26409.44) -> 3
+ theta:  1   mom: 12   Ent:4987
+=>  1 iters (-23256.62) -> 3
+ theta:  1   mom: 13   Ent:2546
+=>  1 iters (-11488.67) -> 3
+ theta:  1   mom: 14   Ent:1902
+=>  2 iters (-8955.60) -> 3
+ theta:  2   mom:  2   Ent:283359
+=== Sucessful r9essai
+=> 29 iters (-1807342.57) -> 3
+ theta:  2   mom:  3   Ent:90640
+=== Sucessful r9essai
+=== Sucessful r9essai
+=== Sucessful r9essai
+=== Sucessful r9essai
+=== Sucessful r9essai
+=== Sucessful r9essai
+=== Sucessful r9essai
+=== Sucessful r9essai
+=== Sucessful r9essai
+=== Sucessful r9essai
+=== Sucessful r9essai
+=> 19 iters (-553716.78) -> 3
+ theta:  2   mom:  4   Ent:31117
+=== Sucessful r9essai
+=== Sucessful r9essai
+=> 10 iters (-175011.97) -> 3
+ theta:  2   mom:  5   Ent:44468
+=== Sucessful r9essai
+=== Sucessful r9essai
+=== Sucessful r9essai
+=== Sucessful r9essai
+=== Sucessful r9essai
+=== Sucessful r9essai
+=== Sucessful r9essai
+=== Sucessful r9essai
+=== Sucessful r9essai
+=> 101 iters (-265500.62) -> 2
+ theta:  2   mom:  6   Ent:29525
+=>  2 iters (-172091.53) -> 3
+ theta:  2   mom:  7   Ent:20062
+=>  3 iters (-111621.18) -> 3
+ theta:  2   mom:  8   Ent:19612
+=>  3 iters (-111820.56) -> 3
+ theta:  2   mom:  9   Ent:11905
+=== Sucessful r9essai
+=>  1 iters (-64603.65) -> 3
+ theta:  2   mom: 10   Ent:5266
+=== Sucessful r9essai
+=>  3 iters (-26361.38) -> 3
+ theta:  2   mom: 11   Ent:5525
+=>  1 iters (-27430.84) -> 3
+ theta:  2   mom: 12   Ent:5110
+=== Sucessful r9essai
+=>  1 iters (-23868.47) -> 3
+ theta:  2   mom: 13   Ent:2588
+=>  1 iters (-11665.40) -> 3
+ theta:  2   mom: 14   Ent:1916
+=>  2 iters (-8987.28) -> 3
  theta:  3   mom:  2   Ent:2978
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
-=>  1 iters (-9186.56) -> 3
+=>  2 iters (-9186.56) -> 3
  theta:  3   mom:  3   Ent:217
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
 =>  1 iters (-456.93) -> 3
  theta:  3   mom:  4   Ent:37
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
-=>  1 iters (-51.10) -> 3
+=== Sucessful r9essai
+=>  1 iters (-51.74) -> 3
  theta:  3   mom:  5   Ent:23
  theta:  3   mom:  6   Ent:5
  theta:  3   mom:  7   Ent:2
@@ -618,168 +413,117 @@ Eff+/-dEff = 0.87+/-0.58 >> 0.07
  theta:  3   mom: 14   Ent:0
 
 Fits of PHI sample for K+ efficiency:
- theta:  0   mom:  2   Ent:4996
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
-=> 101 iters (-23484.45) -> 1
- theta:  0   mom:  3   Ent:2955
+ theta:  0   mom:  2   Ent:176619
 === Sucessful r9essai
-=>  1 iters (-14258.74) -> 3
- theta:  0   mom:  4   Ent:1363
-=>  9 iters (-5792.65) -> 3
- theta:  0   mom:  5   Ent:2411
-=>  1 iters (-11076.03) -> 3
- theta:  0   mom:  6   Ent:2007
-=>  1 iters (-8657.88) -> 3
- theta:  0   mom:  7   Ent:1703
-=>  2 iters (-7231.82) -> 3
- theta:  0   mom:  8   Ent:2045
+=>  9 iters (-1108257.88) -> 3
+ theta:  0   mom:  3   Ent:63163
+=>  3 iters (-374013.73) -> 3
+ theta:  0   mom:  4   Ent:23367
+=>  1 iters (-130021.48) -> 3
+ theta:  0   mom:  5   Ent:35160
 === Sucessful r9essai
-=>  1 iters (-8894.93) -> 3
- theta:  0   mom:  9   Ent:1547
 === Sucessful r9essai
-=>  1 iters (-6675.82) -> 3
- theta:  0   mom: 10   Ent:843
-=>  1 iters (-3714.22) -> 3
- theta:  0   mom: 11   Ent:1037
 === Sucessful r9essai
-=>  1 iters (-4782.16) -> 3
- theta:  0   mom: 12   Ent:1156
-=>  1 iters (-5530.44) -> 3
- theta:  0   mom: 13   Ent:739
 === Sucessful r9essai
-=>  1 iters (-3612.03) -> 3
- theta:  0   mom: 14   Ent:738
-=>  1 iters (-3599.04) -> 3
- theta:  1   mom:  2   Ent:60661
 === Sucessful r9essai
 === Sucessful r9essai
-=> 13 iters (-373381.75) -> 3
- theta:  1   mom:  3   Ent:31303
 === Sucessful r9essai
 === Sucessful r9essai
+=> 101 iters (-205222.86) -> 3
+ theta:  0   mom:  6   Ent:24488
+=>  8 iters (-140850.43) -> 3
+ theta:  0   mom:  7   Ent:18062
 === Sucessful r9essai
 === Sucessful r9essai
 === Sucessful r9essai
 === Sucessful r9essai
 === Sucessful r9essai
+=> 36 iters (-101182.28) -> 3
+ theta:  0   mom:  8   Ent:18857
+=>  5 iters (-106514.93) -> 3
+ theta:  0   mom:  9   Ent:11995
 === Sucessful r9essai
+=> 10 iters (-65657.69) -> 3
+ theta:  0   mom: 10   Ent:5784
+=>  1 iters (-28891.93) -> 3
+ theta:  0   mom: 11   Ent:6075
 === Sucessful r9essai
+=>  3 iters (-32457.77) -> 3
+ theta:  0   mom: 12   Ent:6050
+=>  1 iters (-32098.28) -> 3
+ theta:  0   mom: 13   Ent:3138
+=>  1 iters (-15321.42) -> 3
+ theta:  0   mom: 14   Ent:2531
 === Sucessful r9essai
+=>  1 iters (-13177.28) -> 3
+ theta:  1   mom:  2   Ent:169010
 === Sucessful r9essai
+=>  2 iters (-1058129.49) -> 3
+ theta:  1   mom:  3   Ent:60019
 === Sucessful r9essai
+=>  3 iters (-351322.65) -> 3
+ theta:  1   mom:  4   Ent:21981
 === Sucessful r9essai
+=>  2 iters (-120751.68) -> 3
+ theta:  1   mom:  5   Ent:32721
+=>  4 iters (-188267.88) -> 3
+ theta:  1   mom:  6   Ent:22474
 === Sucessful r9essai
+=>  5 iters (-127642.32) -> 3
+ theta:  1   mom:  7   Ent:16357
+=>  2 iters (-90241.10) -> 3
+ theta:  1   mom:  8   Ent:16811
 === Sucessful r9essai
+=>  2 iters (-93391.06) -> 3
+ theta:  1   mom:  9   Ent:10448
+=>  4 iters (-55902.20) -> 3
+ theta:  1   mom: 10   Ent:4941
+=>  1 iters (-23482.85) -> 3
+ theta:  1   mom: 11   Ent:5038
 === Sucessful r9essai
+=>  1 iters (-25682.33) -> 3
+ theta:  1   mom: 12   Ent:4894
 === Sucessful r9essai
+=>  3 iters (-24451.90) -> 3
+ theta:  1   mom: 13   Ent:2399
+=>  1 iters (-10457.83) -> 3
+ theta:  1   mom: 14   Ent:1793
+=>  1 iters (-8452.32) -> 3
+ theta:  2   mom:  2   Ent:277359
 === Sucessful r9essai
 === Sucessful r9essai
+=>  8 iters (-1782148.15) -> 3
+ theta:  2   mom:  3   Ent:88735
+=> 91 iters (-526651.10) -> 3
+ theta:  2   mom:  4   Ent:30524
 === Sucessful r9essai
+=>  4 iters (-169031.06) -> 3
+ theta:  2   mom:  5   Ent:43304
+Eff+/-dEff = 0.93+/-0.26 >> 0.01
+Eff+/-dEff = 0.93+/-0.38 >> 0.01
 === Sucessful r9essai
+=> 39 iters (-250719.87) -> 3
+ theta:  2   mom:  6   Ent:27854
+=>  3 iters (-158555.51) -> 3
+ theta:  2   mom:  7   Ent:19215
 === Sucessful r9essai
 === Sucessful r9essai
 === Sucessful r9essai
 === Sucessful r9essai
+=> 20 iters (-107411.42) -> 3
+ theta:  2   mom:  8   Ent:18913
+=>  2 iters (-105824.44) -> 3
+ theta:  2   mom:  9   Ent:11282
+=>  7 iters (-60356.37) -> 3
+ theta:  2   mom: 10   Ent:5209
+=>  2 iters (-24785.09) -> 3
+ theta:  2   mom: 11   Ent:5248
+=>  1 iters (-26977.28) -> 3
+ theta:  2   mom: 12   Ent:5007
+=>  1 iters (-24971.27) -> 3
+ theta:  2   mom: 13   Ent:2431
+=>  1 iters (-10504.13) -> 3
+ theta:  2   mom: 14   Ent:1800
 === Sucessful r9essai
 === Sucessful r9essai
 === Sucessful r9essai
@@ -796,235 +540,13 @@ Fits of PHI sample for K+ efficiency:
 === Sucessful r9essai
 === Sucessful r9essai
 === Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=> 101 iters (-183502.46) -> 2
- theta:  1   mom:  4   Ent:13438
-=>  3 iters (-74252.95) -> 3
- theta:  1   mom:  5   Ent:22138
-=== Sucessful r9essai
-=> 48 iters (-127662.39) -> 3
- theta:  1   mom:  6   Ent:17094
-=== Sucessful r9essai
-=>  7 iters (-97420.04) -> 3
- theta:  1   mom:  7   Ent:13499
-=== Sucessful r9essai
-=>  1 iters (-73383.39) -> 3
- theta:  1   mom:  8   Ent:14709
-=== Sucessful r9essai
-=>  3 iters (-81119.94) -> 3
- theta:  1   mom:  9   Ent:9614
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=> 19 iters (-51485.31) -> 3
- theta:  1   mom: 10   Ent:4673
-=>  1 iters (-22189.00) -> 3
- theta:  1   mom: 11   Ent:4828
-=>  1 iters (-24395.01) -> 3
- theta:  1   mom: 12   Ent:4781
-=== Sucessful r9essai
-=> 16 iters (-23933.68) -> 3
- theta:  1   mom: 13   Ent:2367
-=== Sucessful r9essai
-=>  1 iters (-10411.42) -> 3
- theta:  1   mom: 14   Ent:1786
-=>  1 iters (-8437.01) -> 3
- theta:  2   mom:  2   Ent:108349
-=== Sucessful r9essai
-=>  2 iters (-620450.01) -> 3
- theta:  2   mom:  3   Ent:28716
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=== Sucessful r9essai
-=> 29 iters (-143422.28) -> 3
- theta:  2   mom:  4   Ent:8543
-=>  1 iters (-37672.87) -> 3
- theta:  2   mom:  5   Ent:10583
-=== Sucessful r9essai
-=== Sucessful r9essai
-=>  8 iters (-48289.97) -> 3
- theta:  2   mom:  6   Ent:5380
-=>  8 iters (-22800.87) -> 3
- theta:  2   mom:  7   Ent:2858
-=>  1 iters (-12141.85) -> 3
- theta:  2   mom:  8   Ent:2102
-=>  1 iters (-8370.66) -> 3
- theta:  2   mom:  9   Ent:834
-=>  1 iters (-2682.59) -> 3
- theta:  2   mom: 10   Ent:268
-=>  1 iters (-698.45) -> 3
- theta:  2   mom: 11   Ent:210
-Eff+/-dEff = 0.81+/-0.30 >> 0.06
-=>  2 iters (-689.13) -> 3
- theta:  2   mom: 12   Ent:113
-=>  1 iters (-216.11) -> 3
- theta:  2   mom: 13   Ent:32
-=>  1 iters (-10.44) -> 3
- theta:  2   mom: 14   Ent:7
+=> 39 iters (-8467.38) -> 3
  theta:  3   mom:  2   Ent:2613
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
-=>  1 iters (-7519.58) -> 3
+=>  2 iters (-7539.19) -> 3
  theta:  3   mom:  3   Ent:189
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
-=>  1 iters (-425.94) -> 3
+=>  1 iters (-423.26) -> 3
  theta:  3   mom:  4   Ent:23
  theta:  3   mom:  5   Ent:28
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
- FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
 => 101 iters (-19.56) -> 1
  theta:  3   mom:  6   Ent:7
  theta:  3   mom:  7   Ent:2
@@ -1037,91 +559,102 @@ Eff+/-dEff = 0.81+/-0.30 >> 0.06
  theta:  3   mom: 14   Ent:0
 
 Fits of LAMBDA sample for pbar efficiency:
- theta:  0   mom:  2   Ent:22
- theta:  0   mom:  3   Ent:76
-=>  1 iters (-458.12) -> 3
- theta:  0   mom:  4   Ent:66
-=>  1 iters (-393.44) -> 3
- theta:  0   mom:  5   Ent:170
+ theta:  0   mom:  0   Ent:0
+ theta:  0   mom:  1   Ent:46
+=>  2 iters (0.00) -> 1
+ theta:  0   mom:  2   Ent:1097
+=>  1 iters (-3810.80) -> 3
+ theta:  0   mom:  3   Ent:1786
+=>  1 iters (-16522.12) -> 3
+ theta:  0   mom:  4   Ent:1167
+=>  1 iters (-10909.51) -> 3
+ theta:  0   mom:  5   Ent:2763
+=>  2 iters (-27755.09) -> 3
+ theta:  0   mom:  6   Ent:2887
+=>  2 iters (-28522.26) -> 2
+ theta:  0   mom:  7   Ent:2670
 === Sucessful r9essai
-=>  2 iters (-1039.35) -> 3
- theta:  0   mom:  6   Ent:244
-=>  1 iters (-1540.12) -> 3
- theta:  0   mom:  7   Ent:231
-=>  1 iters (-1225.74) -> 3
- theta:  0   mom:  8   Ent:361
-=>  1 iters (-2478.23) -> 3
- theta:  0   mom:  9   Ent:352
+=>  2 iters (-24300.12) -> 2
+ theta:  0   mom:  8   Ent:3746
+=>  2 iters (-35733.72) -> 2
+ theta:  0   mom:  9   Ent:3104
+=>  2 iters (-28333.18) -> 2
+ theta:  0   mom: 10   Ent:1891
+=>  2 iters (-15121.45) -> 2
+ theta:  0   mom: 11   Ent:2416
+=>  1 iters (-20209.88) -> 3
+ theta:  0   mom: 12   Ent:2993
+=>  2 iters (-23911.59) -> 2
+ theta:  0   mom: 13   Ent:2107
 === Sucessful r9essai
-=>  1 iters (-2313.93) -> 3
- theta:  0   mom: 10   Ent:245
-=>  1 iters (-1515.71) -> 3
- theta:  0   mom: 11   Ent:361
+=>  2 iters (-17318.20) -> 3
+ theta:  0   mom: 14   Ent:2394
+=>  2 iters (-19337.50) -> 3
+ theta:  1   mom:  0   Ent:0
+ theta:  1   mom:  1   Ent:45
+=>  2 iters (0.00) -> 1
+ theta:  1   mom:  2   Ent:1068
+=>  1 iters (-3674.03) -> 3
+ theta:  1   mom:  3   Ent:1705
+=>  1 iters (-15597.43) -> 3
+ theta:  1   mom:  4   Ent:1098
 === Sucessful r9essai
-=>  2 iters (-2452.04) -> 2
- theta:  0   mom: 12   Ent:515
+=>  1 iters (-10178.82) -> 3
+ theta:  1   mom:  5   Ent:2592
+=>  1 iters (-25964.82) -> 3
+ theta:  1   mom:  6   Ent:2642
+=>  2 iters (-26032.11) -> 2
+ theta:  1   mom:  7   Ent:2438
 === Sucessful r9essai
-=>  1 iters (-3201.91) -> 3
- theta:  0   mom: 13   Ent:426
-=>  1 iters (-2659.45) -> 3
- theta:  0   mom: 14   Ent:602
-=>  2 iters (-3712.14) -> 2
- theta:  1   mom:  2   Ent:426
-=>  1 iters (-1542.15) -> 3
- theta:  1   mom:  3   Ent:852
-=>  1 iters (-6678.73) -> 3
- theta:  1   mom:  4   Ent:622
+=>  1 iters (-22266.37) -> 3
+ theta:  1   mom:  8   Ent:3385
+=>  1 iters (-31917.98) -> 3
+ theta:  1   mom:  9   Ent:2752
+=>  2 iters (-24811.97) -> 3
+ theta:  1   mom: 10   Ent:1646
+=>  1 iters (-12820.81) -> 3
+ theta:  1   mom: 11   Ent:2055
+=>  1 iters (-16650.78) -> 3
+ theta:  1   mom: 12   Ent:2478
+=>  2 iters (-19340.53) -> 3
+ theta:  1   mom: 13   Ent:1681
+=>  2 iters (-13558.16) -> 2
+ theta:  1   mom: 14   Ent:1792
+=>  2 iters (-14263.86) -> 3
+ theta:  2   mom:  0   Ent:0
+ theta:  2   mom:  1   Ent:79
+=>  2 iters (0.00) -> 1
+ theta:  2   mom:  2   Ent:1710
+=>  1 iters (-5975.20) -> 3
+ theta:  2   mom:  3   Ent:2558
+=>  1 iters (-25123.50) -> 3
+ theta:  2   mom:  4   Ent:1574
 === Sucessful r9essai
-=>  2 iters (-5044.33) -> 2
- theta:  1   mom:  5   Ent:1627
-=>  1 iters (-14425.92) -> 3
- theta:  1   mom:  6   Ent:1885
-=>  1 iters (-17073.12) -> 3
- theta:  1   mom:  7   Ent:1865
-=>  2 iters (-15989.41) -> 3
- theta:  1   mom:  8   Ent:2798
-=>  2 iters (-25568.63) -> 3
- theta:  1   mom:  9   Ent:2395
-=>  2 iters (-20991.99) -> 2
- theta:  1   mom: 10   Ent:1490
+=>  2 iters (-15630.28) -> 3
+ theta:  2   mom:  5   Ent:3557
 === Sucessful r9essai
-=>  1 iters (-11185.83) -> 3
- theta:  1   mom: 11   Ent:1913
-=>  2 iters (-15373.46) -> 2
- theta:  1   mom: 12   Ent:2365
-=>  2 iters (-18316.34) -> 3
- theta:  1   mom: 13   Ent:1629
-=>  1 iters (-13099.45) -> 3
- theta:  1   mom: 14   Ent:1758
-=>  2 iters (-14037.09) -> 3
- theta:  2   mom:  2   Ent:642
-=>  1 iters (-1741.65) -> 3
- theta:  2   mom:  3   Ent:853
-=>  1 iters (-7553.03) -> 3
- theta:  2   mom:  4   Ent:476
-=>  1 iters (-4195.64) -> 3
- theta:  2   mom:  5   Ent:965
+=>  1 iters (-38054.70) -> 3
+ theta:  2   mom:  6   Ent:3399
+=>  2 iters (-35319.69) -> 2
+ theta:  2   mom:  7   Ent:3011
+=>  2 iters (-28738.75) -> 2
+ theta:  2   mom:  8   Ent:3972
+=>  1 iters (-38398.19) -> 3
+ theta:  2   mom:  9   Ent:3109
 === Sucessful r9essai
-=>  2 iters (-9432.09) -> 3
- theta:  2   mom:  6   Ent:757
-=>  2 iters (-7023.95) -> 3
- theta:  2   mom:  7   Ent:573
-=>  1 iters (-4750.23) -> 3
- theta:  2   mom:  8   Ent:587
-=>  2 iters (-4553.38) -> 2
- theta:  2   mom:  9   Ent:357
-=>  2 iters (-2608.38) -> 3
- theta:  2   mom: 10   Ent:156
-=>  2 iters (-1037.50) -> 3
- theta:  2   mom: 11   Ent:142
-=>  1 iters (-739.21) -> 3
- theta:  2   mom: 12   Ent:113
-=>  1 iters (-565.50) -> 3
- theta:  2   mom: 13   Ent:52
-=>  1 iters (-217.19) -> 3
- theta:  2   mom: 14   Ent:34
-Eff+/-dEff = 0.34+/-0.67 >> 0.28
-=>  2 iters (-85.16) -> 3
+=>  1 iters (-28695.15) -> 3
+ theta:  2   mom: 10   Ent:1802
+=>  1 iters (-14479.85) -> 3
+ theta:  2   mom: 11   Ent:2197
+=>  1 iters (-17940.93) -> 3
+ theta:  2   mom: 12   Ent:2591
+=>  2 iters (-20371.58) -> 2
+ theta:  2   mom: 13   Ent:1733
+=>  2 iters (-14019.40) -> 2
+ theta:  2   mom: 14   Ent:1826
+=>  2 iters (-14491.14) -> 2
+ theta:  3   mom:  0   Ent:0
+ theta:  3   mom:  1   Ent:1
  theta:  3   mom:  2   Ent:7
  theta:  3   mom:  3   Ent:5
  theta:  3   mom:  4   Ent:3
@@ -1129,96 +662,108 @@ Eff+/-dEff = 0.34+/-0.67 >> 0.28
  theta:  3   mom:  6   Ent:1
 
 Fits of LAMBDA sample for p efficiency:
- theta:  0   mom:  2   Ent:39
-=>  1 iters (-70.26) -> 3
- theta:  0   mom:  3   Ent:71
-=>  1 iters (-528.57) -> 3
- theta:  0   mom:  4   Ent:84
-=>  1 iters (-500.80) -> 3
- theta:  0   mom:  5   Ent:197
-=>  1 iters (-1454.79) -> 3
- theta:  0   mom:  6   Ent:229
-=>  1 iters (-1839.47) -> 3
- theta:  0   mom:  7   Ent:259
-=>  1 iters (-1735.28) -> 3
- theta:  0   mom:  8   Ent:423
-=>  2 iters (-3214.84) -> 2
- theta:  0   mom:  9   Ent:421
-=>  1 iters (-3272.86) -> 3
- theta:  0   mom: 10   Ent:243
+ theta:  0   mom:  0   Ent:0
+ theta:  0   mom:  1   Ent:50
+=>  2 iters (0.00) -> 1
+ theta:  0   mom:  2   Ent:1202
+=>  1 iters (-4807.33) -> 3
+ theta:  0   mom:  3   Ent:2130
+=>  1 iters (-21977.63) -> 3
+ theta:  0   mom:  4   Ent:1447
 === Sucessful r9essai
-=>  1 iters (-1495.09) -> 3
- theta:  0   mom: 11   Ent:370
-=>  2 iters (-2483.51) -> 2
- theta:  0   mom: 12   Ent:529
+=>  1 iters (-14821.41) -> 3
+ theta:  0   mom:  5   Ent:3111
+=>  2 iters (-35445.95) -> 3
+ theta:  0   mom:  6   Ent:3351
+=>  1 iters (-37893.14) -> 3
+ theta:  0   mom:  7   Ent:3257
+=>  1 iters (-34672.33) -> 3
+ theta:  0   mom:  8   Ent:4276
+=>  2 iters (-45823.75) -> 2
+ theta:  0   mom:  9   Ent:3780
+=>  2 iters (-37886.53) -> 2
+ theta:  0   mom: 10   Ent:2074
+=>  1 iters (-18902.39) -> 3
+ theta:  0   mom: 11   Ent:2746
 === Sucessful r9essai
-=>  2 iters (-3588.41) -> 3
- theta:  0   mom: 13   Ent:483
+=>  2 iters (-25759.39) -> 2
+ theta:  0   mom: 12   Ent:3442
 === Sucessful r9essai
-=>  1 iters (-3286.93) -> 3
- theta:  0   mom: 14   Ent:572
-=>  1 iters (-3844.40) -> 3
- theta:  1   mom:  2   Ent:433
-=>  1 iters (-1412.65) -> 3
- theta:  1   mom:  3   Ent:1035
-=>  1 iters (-9435.44) -> 3
- theta:  1   mom:  4   Ent:775
+=>  1 iters (-33548.58) -> 3
+ theta:  0   mom: 13   Ent:2479
+=>  1 iters (-22288.54) -> 3
+ theta:  0   mom: 14   Ent:2688
+=>  1 iters (-24237.85) -> 3
+ theta:  1   mom:  0   Ent:0
+ theta:  1   mom:  1   Ent:48
+=>  2 iters (0.00) -> 1
+ theta:  1   mom:  2   Ent:1157
+=>  1 iters (-4603.67) -> 3
+ theta:  1   mom:  3   Ent:2055
+=>  1 iters (-21011.93) -> 3
+ theta:  1   mom:  4   Ent:1361
 === Sucessful r9essai
-=>  2 iters (-7066.96) -> 3
- theta:  1   mom:  5   Ent:1763
-=>  1 iters (-17632.81) -> 3
- theta:  1   mom:  6   Ent:2089
+=>  2 iters (-13917.54) -> 2
+ theta:  1   mom:  5   Ent:2913
 === Sucessful r9essai
-=>  2 iters (-21523.17) -> 3
- theta:  1   mom:  7   Ent:2239
-=>  2 iters (-22359.23) -> 2
- theta:  1   mom:  8   Ent:3130
-=>  2 iters (-31956.79) -> 3
- theta:  1   mom:  9   Ent:2873
-=>  2 iters (-27521.77) -> 2
- theta:  1   mom: 10   Ent:1619
+=>  2 iters (-33074.46) -> 3
+ theta:  1   mom:  6   Ent:3121
 === Sucessful r9essai
-=>  2 iters (-14266.97) -> 3
- theta:  1   mom: 11   Ent:2155
-=>  2 iters (-19537.28) -> 3
- theta:  1   mom: 12   Ent:2762
+=>  1 iters (-34961.94) -> 3
+ theta:  1   mom:  7   Ent:2997
+=>  1 iters (-31878.96) -> 3
+ theta:  1   mom:  8   Ent:3852
+=>  2 iters (-40948.29) -> 3
+ theta:  1   mom:  9   Ent:3359
+=>  2 iters (-33025.84) -> 2
+ theta:  1   mom: 10   Ent:1831
 === Sucessful r9essai
-=>  1 iters (-26511.24) -> 3
- theta:  1   mom: 13   Ent:1938
-=>  2 iters (-17058.49) -> 2
- theta:  1   mom: 14   Ent:2079
+=>  2 iters (-16593.02) -> 3
+ theta:  1   mom: 11   Ent:2376
+=>  2 iters (-22077.29) -> 2
+ theta:  1   mom: 12   Ent:2913
+=== Sucessful r9essai
+=>  1 iters (-28357.12) -> 3
+ theta:  1   mom: 13   Ent:1996
+=>  1 iters (-17666.04) -> 3
+ theta:  1   mom: 14   Ent:2116
+=== Sucessful r9essai
+=>  2 iters (-18888.60) -> 2
+ theta:  2   mom:  0   Ent:0
+ theta:  2   mom:  1   Ent:81
+=>  2 iters (0.00) -> 1
+ theta:  2   mom:  2   Ent:1881
+=>  1 iters (-8104.36) -> 3
+ theta:  2   mom:  3   Ent:3075
+=>  1 iters (-33305.68) -> 3
+ theta:  2   mom:  4   Ent:1947
+=>  1 iters (-21160.87) -> 3
+ theta:  2   mom:  5   Ent:4063
+=== Sucessful r9essai
+=>  2 iters (-49278.05) -> 3
+ theta:  2   mom:  6   Ent:4153
+=== Sucessful r9essai
+=>  2 iters (-48930.35) -> 2
+ theta:  2   mom:  7   Ent:3755
 === Sucessful r9essai
 === Sucessful r9essai
-=>  2 iters (-18607.53) -> 3
- theta:  2   mom:  2   Ent:724
-=>  1 iters (-2747.49) -> 3
- theta:  2   mom:  3   Ent:1020
-=>  1 iters (-9801.96) -> 3
- theta:  2   mom:  4   Ent:586
-=>  1 iters (-5637.24) -> 3
- theta:  2   mom:  5   Ent:1150
-=== Sucessful r9essai
-=>  1 iters (-12849.35) -> 3
- theta:  2   mom:  6   Ent:1032
-=== Sucessful r9essai
-=>  2 iters (-10828.95) -> 2
- theta:  2   mom:  7   Ent:758
-=>  1 iters (-7357.95) -> 3
- theta:  2   mom:  8   Ent:722
-=>  2 iters (-6660.88) -> 3
- theta:  2   mom:  9   Ent:486
-=>  2 iters (-3846.10) -> 3
- theta:  2   mom: 10   Ent:212
-=>  1 iters (-1530.00) -> 3
- theta:  2   mom: 11   Ent:221
-=== Sucessful r9essai
-=>  1 iters (-1632.57) -> 3
- theta:  2   mom: 12   Ent:151
-=>  1 iters (-1082.65) -> 3
- theta:  2   mom: 13   Ent:58
-=>  2 iters (-294.91) -> 3
- theta:  2   mom: 14   Ent:37
-=>  1 iters (-113.71) -> 3
+=>  2 iters (-41695.56) -> 3
+ theta:  2   mom:  8   Ent:4574
+=>  2 iters (-50136.14) -> 2
+ theta:  2   mom:  9   Ent:3845
+=>  1 iters (-38621.81) -> 3
+ theta:  2   mom: 10   Ent:2043
+=>  2 iters (-18955.78) -> 3
+ theta:  2   mom: 11   Ent:2597
+=>  2 iters (-24649.45) -> 2
+ theta:  2   mom: 12   Ent:3064
+=>  1 iters (-30216.98) -> 3
+ theta:  2   mom: 13   Ent:2054
+=>  1 iters (-18276.45) -> 3
+ theta:  2   mom: 14   Ent:2153
+=>  1 iters (-19170.43) -> 3
+ theta:  3   mom:  0   Ent:0
+ theta:  3   mom:  1   Ent:0
  theta:  3   mom:  2   Ent:6
  theta:  3   mom:  3   Ent:4
  theta:  3   mom:  4   Ent:2
@@ -1234,106 +779,100 @@ p,t,i: 0,2,4 Empty
 p,t,i: 0,2,5 Empty
 p,t,i: 1,1,2 Empty
 p,t,i: 1,1,3 Empty
-p,t,i: 1,1,4 Empty
-p,t,i: 1,1,5 Empty
 p,t,i: 1,2,2 Empty
 p,t,i: 1,2,3 Empty
-p,t,i: 1,2,4 Empty
-p,t,i: 1,2,5 Empty
-p,t,i: 14,2,2 Empty
-p,t,i: 14,2,3 Empty
-0 1 0 0.760741 0.964565 0.973093 0.975689 0.977192 0.971892 0.967657 0.982801 0.979549 0.985643 0.982088 0.981523 0.962982 0.908745 0.908081 
-0 2 0 0 0 0 8.48166e-09 0 0.00122711 0.00464617 0.000569521 0.00472655 0.00386996 0.00500438 0.00613798 0.00346677 0.0367261 0.00470875 
-0 3 0 0.239259 0.0354352 0.0269071 0.0243107 0.0228079 0.0268812 0.0260757 0.0147445 0.0142725 0.0080266 1.04649e-09 2.65641e-11 0.00691494 9.71019e-09 0.00515721 
-0 4 0 0 0 0 0 0 0 0.00162097 0.00188531 0.00145231 0.00246076 0.0129075 0.0123389 0.0266359 0.0545293 0.082053 
-0 1 1 0.805379 0.948964 0.96925 0.973456 0.974495 0.974557 0.977551 0.981751 0.98108 0.978842 0.980976 0.969474 0.962836 0.949364 0.897461 
-0 2 1 0 0 0 0.000207149 0.00183513 0.00239008 0.00269737 0.000838078 0.00261796 0.00641538 0.00431307 0.0108093 0.0192602 0.0093836 0.0285406 
-0 3 1 0.194621 0.0510363 0.0307502 0.0260282 0.023053 0.0228847 0.0197512 0.0172316 0.0157663 0.00737653 0.00539927 0.00843938 0.00507057 0.00782907 0.00177027 
-0 4 1 0 0 0 0.000308327 0.000616737 0.000168099 3.58139e-10 0.000179041 0.000536216 0.00736623 0.0093112 0.011277 0.0128336 0.0334236 0.0722283 
-0 1 2 0.875041 0.901363 0.908756 0.920483 0.916841 0.921181 0.913825 0.935032 0.925618 0.928675 0.970765 0.926679 0.920928 0.923389 0.55363 
-0 2 2 0 0 0 0.000520302 0.00313114 0.00473461 0.00402038 0.00441982 0.00440596 0.0118585 0.00299736 0.0212352 0.0138045 7.04301e-06 4.2825e-10 
-0 3 2 0.124959 0.0986369 0.0912443 0.0789965 0.0791324 0.0733786 0.0805408 0.0595736 0.0699762 0.0334876 4.97855e-08 0.0257333 0.0026225 0.0440274 0 
-0 4 2 0 0 0 0 0.000895288 0.000705849 0.00161403 0.000974227 0 0.0259786 0.0262376 0.0263527 0.0626449 0.032577 0.44637 
+0 1 0 0.84505 0.909672 0.930497 0.948523 0.95259 0.957656 0.96129 0.972877 0.973294 0.974645 0.981239 0.970129 0.962025 0.940618 0.898086 
+0 2 0 0 0 0 0.000307978 0.00199991 0.00310611 0.00317032 0.0014403 0.00294207 0.00655026 0.004037 0.010881 0.0161016 0.0153814 0.0230447 
+0 3 0 0.15495 0.0903278 0.0695026 0.0510096 0.0447147 0.0389269 0.0350175 0.0252667 0.0231698 0.0101419 0.0040963 0.00721052 0.00473752 0.00640799 0.00274917 
+0 4 0 0 0 0 0.000159164 0.000695492 0.000311215 0.000522137 0.000415854 0.000594325 0.0086629 0.0106279 0.0117793 0.0171356 0.0375924 0.0761202 
+0 1 1 0.865725 0.911821 0.930136 0.9476 0.950907 0.956768 0.960921 0.972133 0.972578 0.974017 0.980692 0.967302 0.960925 0.949138 0.896259 
+0 2 1 0 0 0 0.000347435 0.00211885 0.00320049 0.00300506 0.0015331 0.00269384 0.00694181 0.00415187 0.0115134 0.0187118 0.00930731 0.027777 
+0 3 1 0.134275 0.0881788 0.0698642 0.0518939 0.0462442 0.0396991 0.0356487 0.0260823 0.024254 0.009681 0.0048719 0.00906822 0.00512678 0.00822737 0.00172045 
+0 4 1 0 0 0 0.000158635 0.000730262 0.000332262 0.000425663 0.000251643 0.000473948 0.00936064 0.0102843 0.0121163 0.0152365 0.0333275 0.0742437 
+0 1 2 0.870048 0.907241 0.921733 0.93875 0.94112 0.947923 0.950663 0.966103 0.966213 0.969962 0.980511 0.965526 0.959243 0.948956 0.895068 
+0 2 2 0 0 0 0.000389087 0.00228408 0.00359254 0.00318155 0.00203017 0.00282918 0.00738022 0.00399764 0.0120357 0.0182522 0.00925034 0.0270163 
+0 3 2 0.129952 0.0927587 0.0782671 0.0607541 0.0558176 0.0480675 0.0454832 0.0315444 0.0305329 0.0117086 0.00432493 0.00957135 0.00518865 0.00858983 0.00165113 
+0 4 2 0 0 0 0.000106536 0.000778092 0.000416913 0.000672051 0.000322891 0.000425315 0.0109495 0.0111665 0.0128666 0.0173166 0.0332038 0.0762649 
 0 1 3 0.78206 0.839027 0.802178 0.792807 
 0 2 3 0 0 0 0 
 0 3 3 0.21794 0.160973 0.197822 0.207193 
 0 4 3 0 0 0 0 
-1 1 0 0.791714 0.929068 0.968086 0.962881 0.974536 0.988928 0.966349 0.988962 0.972224 0.984416 0.978187 0.96738 0.940507 0.887528 0.891573 
-1 2 0 0 0 0 0.0019482 2.84884e-17 0.000931881 0.0104066 0.000335148 0.00536284 0.00605712 0.0122554 0.0153587 0.0298622 0.0293226 0.0332263 
-1 3 0 0.208286 0.070932 0.0319143 0.0351706 0.0216699 0.0101399 0.0232445 0.0107033 0.0208799 0.0070231 4.40222e-07 3.16855e-07 0.00932259 0.00603606 1.83112e-06 
-1 4 0 0 0 0 0 0.00379401 8.17593e-10 0 0 0.00153306 0.0025034 0.00955689 0.0172608 0.0203084 0.0771135 0.0751985 
-1 1 1 0.815333 0.945525 0.961916 0.970473 0.973012 0.97537 0.979798 0.981439 0.979065 0.982883 0.98279 0.967635 0.965046 0.943929 0.913289 
-1 2 1 0 0 0 0.000967621 0.000738931 0.0011497 0.00114785 0.00366737 0.000923103 0.00677024 0.00687915 0.012144 0.015049 0.0191938 0.0100117 
-1 3 1 0.184667 0.0544751 0.0380844 0.0285592 0.025924 0.0233099 0.0180783 0.0147047 0.019217 0.00569838 0.00145887 0.00805376 0.00492046 0.00372162 5.98161e-09 
-1 4 1 0 0 0 0 0.000325294 0.000170816 0.000975696 0.000189364 0.000795407 0.0046481 0.00887165 0.0121673 0.0149843 0.0331558 0.0766991 
-1 1 2 0.89795 0.92016 0.934052 0.93689 0.931445 0.944331 0.945292 0.953641 0.955397 0.949844 0.944051 0.922351 0.988549 0.839916 1 
-1 2 2 0 0 0 0.00207834 0.00379446 0.00313937 0.000564014 0.00230689 0.00477754 0.00327139 0.00679586 0.012715 0.00252918 0.0539103 7.98536e-10 
-1 3 2 0.10205 0.0798404 0.0659475 0.0610316 0.0647605 0.05217 0.0541439 0.0431058 0.0362498 0.0170506 0.00907947 0.035133 1.34886e-05 0.0253 2.7018e-10 
-1 4 2 0 0 0 0 0 0.000360066 0 0.000946202 0.00357575 0.0298339 0.040074 0.0298012 0.00890827 0.0808737 4.74063e-10 
+1 1 0 0.868095 0.921735 0.94395 0.954855 0.957138 0.96647 0.970991 0.976177 0.975547 0.980398 0.980793 0.966203 0.962874 0.933641 0.911701 
+1 2 0 0 0 0 0.00147435 0.00186874 0.00180473 0.00185615 0.00301316 0.00156737 0.00653547 0.00699106 0.0123732 0.0171375 0.0209036 0.0132163 
+1 3 0 0.131905 0.0782654 0.0560499 0.0436705 0.040632 0.0314615 0.0264564 0.0205143 0.02164 0.00688366 0.00182793 0.0079949 0.00442107 0.00344807 3.28837e-07 
+1 4 0 0 0 0 0 0.00036103 0.000263808 0.000696646 0.000295099 0.00124554 0.00618253 0.0103879 0.013429 0.0155672 0.0420075 0.075082 
+1 1 1 0.887121 0.925445 0.943978 0.954459 0.956934 0.965132 0.971429 0.976324 0.976363 0.979978 0.98184 0.965307 0.966238 0.942522 0.914725 
+1 2 1 0 0 0 0.00150162 0.00188482 0.00186803 0.00108292 0.00340484 0.000969888 0.00648466 0.00635757 0.0120463 0.014708 0.0193342 0.00950999 
+1 3 1 0.112879 0.0745551 0.0560221 0.0440391 0.040982 0.0327724 0.0267347 0.0199474 0.0214825 0.00681491 0.00152599 0.00964314 0.00431118 0.00377153 3.55425e-08 
+1 4 1 0 0 0 0 0.000199383 0.00022767 0.000753522 0.000323705 0.00118413 0.00672207 0.0102761 0.0130039 0.0147431 0.0343727 0.0757651 
+1 1 2 0.892139 0.923101 0.94007 0.948808 0.95008 0.959974 0.966338 0.97288 0.974476 0.977422 0.980837 0.963175 0.967363 0.941072 0.916107 
+1 2 2 0 0 0 0.00168892 0.00234298 0.00220352 0.00102008 0.00321563 0.000848778 0.00624905 0.00593977 0.0119983 0.0143762 0.0195476 0.00902365 
+1 3 2 0.107861 0.0768988 0.0599305 0.0495029 0.0474423 0.0375668 0.0320371 0.0234836 0.023193 0.00779471 0.0016328 0.011053 0.00377278 0.00381516 3.33202e-08 
+1 4 2 0 0 0 0 0.000134943 0.000255951 0.00060434 0.000420401 0.00148231 0.00853418 0.01159 0.0137735 0.0144879 0.0355651 0.0748691 
 1 1 3 0.806816 0.831838 0.81093 
 1 2 3 0 0 0 
 1 3 3 0.193184 0.168162 0.18907 
 1 4 3 0 0 0 
-2 1 0 0.495157 0.168558 0.425725 0.238271 0.157457 0.182539 0.235119 0.0400097 0.0607764 0.0226934 0.368603 0.34202 0.555271 
-2 2 0 0.00447013 0.236794 0.554247 0.633105 0.723002 0.817461 0.678465 0.863966 0.915265 0.919332 0.509832 0.485365 0.275125 
-2 3 0 0.500373 0.594648 0.0200277 0.11061 0.119541 1.41275e-10 0.0736719 0.0318416 0.0239577 0.0135018 5.87667e-11 0.00643203 0.00936835 
-2 4 0 0 8.02062e-09 1.57906e-08 0.0180147 3.43482e-10 9.73837e-10 0.0127444 0.0641827 1.36886e-06 0.0444724 0.121565 0.166182 0.160236 
-2 1 1 0.126979 0.14327 0.0530282 5.02037e-08 3.28498e-07 2.83514e-06 2.85222e-06 0.0411837 0.0570522 0.0687044 0.0140034 0.0943044 0.19792 
-2 2 1 0.00505931 0.42475 0.767709 0.932141 0.94712 0.952922 0.952137 0.918514 0.90998 0.910845 0.881402 0.725367 0.506759 
-2 3 1 0.867962 0.429393 0.178008 0.0652046 0.0528798 0.0470753 0.0456903 0.028767 0.0128728 0.00554368 0.0141924 0.0225749 2.93624e-07 
-2 4 1 0 0.00258716 0.00125487 0.00265422 4.87997e-10 1.39051e-10 0.00216994 0.0115353 0.0200953 0.0149067 0.0904023 0.157753 0.295321 
-2 1 2 0.0835408 1.27103e-05 0.061297 2.18365e-12 0.0502763 0.0553089 5.89481e-07 0.023267 8.54355e-07 0.134528 2.22e-12 0.113704 
-2 2 2 0.00552768 0.67238 0.77549 0.831422 0.872699 0.894464 0.86756 0.899889 0.978865 0.865472 0.922951 0.54067 
-2 3 2 0.910932 0.327607 0.158879 0.16536 0.0744616 0.0502273 0.132437 3.7291e-10 1.20007e-08 1.76351e-08 0.00534548 1.62232e-12 
-2 4 2 0 4.089e-13 0.00433486 0.00321748 0.00256352 0 1.90187e-06 0.076844 0.0211337 5.0185e-07 0.0717032 0.345626 
-2 1 3 0.0914765 0.31642 3.45356e-06 
-2 2 3 5.5743e-08 0.603156 1.88376e-06 
-2 3 3 0.908523 0.0804238 0.999995 
+2 1 0 0.109627 0.067687 0.0815431 2.82201e-07 0.00121357 0.0244957 0.0118367 0.0390399 0.0511732 0.0683024 0.0938583 0.148435 0.318966 
+2 2 0 0.0051862 0.538866 0.750296 0.893966 0.934157 0.934029 0.927591 0.912039 0.916013 0.907681 0.800966 0.668147 0.430006 
+2 3 0 0.885187 0.392293 0.164654 0.102875 0.0646296 0.0414756 0.0571362 0.0264407 0.0138419 0.00393547 0.00672483 0.0185626 0.00242079 
+2 4 0 0 0.00115485 0.00350719 0.00315928 7.0032e-13 1.89635e-10 0.00343612 0.0224808 0.0189722 0.020081 0.0984509 0.164855 0.248607 
+2 1 1 0.0891692 0.0619089 0.0583385 3.87968e-09 3.54844e-06 0.00768518 3.36474e-10 0.0486006 0.0495719 0.0748979 0.00790121 0.0955437 0.197061 
+2 2 1 0.00551498 0.554057 0.767843 0.896836 0.940061 0.943819 0.944086 0.909757 0.917302 0.905631 0.88856 0.718862 0.507521 
+2 3 1 0.905316 0.382756 0.170114 0.100753 0.0599351 0.0484956 0.0541233 0.0255455 0.0110886 0.00280999 0.0129729 0.0220537 3.0742e-10 
+2 4 1 0 0.00127837 0.00370426 0.00241056 9.29385e-09 4.3469e-10 0.00179037 0.0160967 0.0220372 0.0166607 0.0905657 0.16354 0.295418 
+2 1 2 0.0856663 0.0245387 0.0604568 1.31568e-06 4.06266e-05 0.0137334 4.66843e-09 0.050165 0.0432982 0.0808251 0.00396977 0.0966992 0.196115 
+2 2 2 0.0054952 0.60368 0.768256 0.879799 0.935414 0.937753 0.938322 0.906934 0.923717 0.900789 0.893676 0.71269 0.508142 
+2 3 2 0.908838 0.370925 0.166914 0.117919 0.064545 0.0485135 0.0602239 0.0226734 0.0093238 7.48072e-05 0.0116681 0.0215682 4.36353e-10 
+2 4 2 0 0.000856059 0.00437349 0.00228124 2.46484e-10 4.37913e-10 0.00145394 0.0202279 0.0236608 0.0183112 0.0906857 0.169043 0.295743 
+2 1 3 0.0915913 0.317322 0.999999 
+2 2 3 1.14272e-10 0.604579 1.96832e-07 
+2 3 3 0.908409 0.0780992 5.42734e-07 
 2 4 3 0 0 0 
-3 1 0 0.543396 0.207758 0.410371 0.197422 0.226525 0.0219619 1.84785e-10 2.86787e-10 0.114239 0.0197222 0.222723 0.240832 0.438991 
-3 2 0 0 0.176382 0.348021 0.588169 0.628617 0.840444 0.88618 0.928506 0.770583 0.900394 0.686932 0.475714 0.253695 
-3 3 0 0.456604 0.615859 0.241608 0.187014 0.144857 0.10871 0.11382 0.029812 1.59504e-10 0.00646418 0.00362127 0.0161845 0.00959178 
-3 4 0 0 1.04728e-10 1.52973e-10 0.0273949 1.4472e-07 0.0288841 6.11942e-08 0.041682 0.115178 0.07342 0.086724 0.26727 0.297723 
-3 1 1 0.16696 0.0801575 0.0831072 0.060881 4.01701e-06 2.2674e-09 0.00807216 0.0147694 0.036211 0.0443186 0.0299615 0.0461324 0.142055 
-3 2 1 0.00294467 0.501325 0.789177 0.852602 0.978969 0.936276 0.964528 0.959067 0.917318 0.920853 0.896173 0.811842 0.551488 
-3 3 1 0.830096 0.417505 0.119642 0.0834576 0.0210272 0.0586284 0.027368 0.015558 0.0132234 0.00920944 0.0187127 0.00156155 0.0216634 
-3 4 1 0 0.00101229 0.00807321 0.00305979 5.11598e-11 0.00509565 3.20556e-05 0.0106051 0.0332472 0.0256194 0.055153 0.140464 0.284793 
-3 1 2 0.105166 9.86708e-08 6.18358e-10 2.02487e-09 2.64239e-06 2.69533e-07 1.29498e-10 0.000123834 2.68847e-06 0.187935 0.0440454 0.999989 
-3 2 2 0.00397667 0.698612 0.90228 0.958385 0.900453 0.888346 0.962313 0.963234 0.921099 0.812064 0.955954 2.17471e-06 
-3 3 2 0.890857 0.298761 0.0961035 0.0414188 0.0972274 0.111654 0.0335994 1.70329e-06 0.000171832 9.51625e-07 1.24258e-07 8.85345e-06 
-3 4 2 0 0.0026264 0.00161692 0.000196335 0.00231692 5.76749e-10 0.00408751 0.0366409 0.0787264 1.51791e-08 5.48813e-08 2.29062e-08 
-3 1 3 0.000179979 6.1605e-06 0.291646 
-3 2 3 1.70435e-07 0.84591 1.15222e-06 
-3 3 3 0.99982 0.154084 0.708353 
-3 4 3 3.48832e-09 2.17393e-09 1.56598e-13 
-4 1 0 0.32793 0.390768 0.47431 0.387971 0.179477 0.385727 0.0786129 0.148495 0.110582 0.0165047 0.0832865 0.081448 
-4 2 0 0 2.95707e-10 0.0563342 3.74046e-06 0.0835505 0.0230447 0.0183625 0.0617019 8.42903e-11 0.0392737 0.0285015 1.88354e-09 
-4 3 0 0.67207 0.609232 0.469355 0.584735 0.716831 0.591228 0.839137 0.756858 0.878223 0.907825 0.854903 0.901362 
-4 4 0 0 0 0 0.0272905 0.0201417 2.06153e-07 0.0638879 0.032945 0.0111955 0.0363968 0.0333094 0.0171899 
-4 1 1 0.305668 0.207396 0.186568 0.184554 0.185233 0.215055 0.14182 0.0781525 0.0887652 0.0582794 0.0336286 2.21936e-07 1.61602e-09 
-4 2 1 0 0.0287931 6.25864e-06 0.0668908 0.0658418 0.0636297 0.0417405 0.0148875 0.0393246 5.17877e-11 0.00330572 1.94991e-10 0.0327513 
-4 3 1 0.694332 0.763811 0.813426 0.748555 0.739505 0.712048 0.794103 0.870173 0.844728 0.91021 0.963066 0.982296 0.960313 
-4 4 1 0 0 0 1.17606e-17 0.00941999 0.00926698 0.0223368 0.0367872 0.0271818 0.0315102 3.22528e-08 0.0177034 0.00693607 
-4 1 2 0.440347 0.0521971 0.107821 0.105664 0.152768 0.0589127 0.049758 3.89136e-09 3.01436e-11 3.81225e-06 3.96506e-05 0.0599959 2.35926e-05 
-4 2 2 0 0.043449 0.0406086 0.0370725 0.0721638 0.0496399 0.0569375 0.0433649 0.0257063 1.59919e-09 0.0204664 1.5513e-08 1.17963e-05 
-4 3 2 0.559653 0.904354 0.846363 0.854649 0.772159 0.887064 0.887406 0.945086 0.950989 0.999996 0.893774 0.940004 0.335642 
-4 4 2 0 0 0.00520816 0.00261458 0.00290828 0.00438379 0.00589817 0.011549 0.0233051 6.03352e-10 0.0857195 1.09582e-12 0.664322 
+3 1 0 0.79363 0.716461 0.0344723 0.0474454 9.39094e-08 4.20334e-09 2.22169e-09 0.0102806 0.0505881 0.0474576 0.0778987 0.0997509 0.245582 
+3 2 0 0.000268922 3.57159e-09 0.837956 0.868203 0.947121 0.918881 0.959189 0.961689 0.891207 0.909085 0.848223 0.717529 0.450532 
+3 3 0 0.206101 0.283539 0.12319 0.0804933 0.0528786 0.0750691 0.0402806 0.0123347 0.00985908 0.00969012 0.0139386 0.00602101 0.017327 
+3 4 0 0 2.25386e-11 0.0043815 0.00385787 1.90795e-09 0.00604989 0.000530742 0.0156958 0.048346 0.0337674 0.0599396 0.176699 0.286559 
+3 1 1 0.127742 0.0223906 0.0166689 0.0244209 1.09018e-08 1.39445e-08 3.50713e-08 0.0147798 0.0329222 0.0530212 0.0327905 0.0445083 0.131446 
+3 2 1 0.0035246 0.614794 0.86107 0.899233 0.955801 0.925806 0.965746 0.966299 0.919074 0.91377 0.897411 0.814524 0.559604 
+3 3 1 0.868734 0.360978 0.116943 0.0741396 0.0441912 0.0700987 0.0335674 0.00782322 0.0125643 0.00917024 0.0165398 0.00118869 0.0217317 
+3 4 1 0 0.00183747 0.00531801 0.00220685 7.78633e-06 0.00409567 0.000687005 0.0110979 0.0354398 0.0240386 0.0532585 0.139779 0.287218 
+3 1 2 0.122142 5.68023e-07 1.72163e-10 0.000415691 3.72907e-08 2.83714e-11 3.97103e-08 0.0150703 0.0252652 0.058918 0.0291449 0.0429104 0.131256 
+3 2 2 0.00368411 0.654859 0.881215 0.926998 0.944231 0.919948 0.964082 0.972795 0.924995 0.90941 0.905374 0.816487 0.560292 
+3 3 2 0.874173 0.342998 0.114622 0.0708621 0.0551409 0.0766418 0.0348048 0.000650116 0.0120785 0.00918296 0.0143586 0.00103063 0.0217004 
+3 4 2 0 0.00214271 0.00416366 0.00172387 0.000628205 0.00341043 0.00111273 0.0114843 0.0376612 0.0224889 0.051122 0.139572 0.286752 
+3 1 3 1.00455e-07 0.983011 0.292164 
+3 2 3 4.32741e-10 5.32927e-10 7.57013e-11 
+3 3 3 1 0.0169888 0.707836 
+3 4 3 0 0 0 
+4 1 0 0 0.376279 0.131377 0.170901 0.161955 0.190501 0.170247 0.14982 0.0553199 0.0813829 0.0595419 0.0270144 3.19178e-08 1.51113e-08 
+4 2 0 0 0 0.0368061 0.0116221 0.0531138 0.0633272 0.0593053 0.0422806 0.0187257 0.041349 3.80098e-07 0.0121613 0.00366899 0.0209318 
+4 3 0 0 0.623721 0.831817 0.814949 0.783846 0.737624 0.761754 0.789206 0.889785 0.849567 0.913194 0.950712 0.977275 0.972985 
+4 4 0 0 0 0 0.00252695 0.00108524 0.00854784 0.00869319 0.0186932 0.0361694 0.0277012 0.0272639 0.0101122 0.0190564 0.00608294 
+4 1 1 0 0.400178 0.125118 0.15004 0.154364 0.172875 0.17049 0.125799 0.0559966 0.0680415 0.0504319 0.0309668 7.43883e-10 1.76353e-07 
+4 2 1 0 0 0.0382316 0.0143515 0.0534658 0.0678696 0.058803 0.0445187 0.0195236 0.0384028 1.45874e-08 0.00526596 3.02787e-10 0.03343 
+4 3 1 0 0.599822 0.83665 0.832917 0.791138 0.75214 0.762732 0.810203 0.891776 0.866781 0.919375 0.957032 0.984906 0.961064 
+4 4 1 0 0 0 0.00269182 0.00103236 0.00711503 0.00797434 0.0194786 0.0327033 0.0267745 0.0301934 0.00673555 0.0150936 0.00550535 
+4 1 2 0 0.416902 0.0998877 0.136113 0.14127 0.167224 0.145581 0.114604 0.0401624 0.0519417 0.0435581 0.0284826 5.95579e-14 6.92569e-10 
+4 2 2 0 0 0.0401588 0.0227697 0.0481855 0.0688514 0.0562552 0.0464259 0.0230894 0.0375767 8.04297e-10 0.00685559 2.08234e-11 0.0343147 
+4 3 2 0 0.583098 0.859954 0.837575 0.809106 0.757925 0.790924 0.821504 0.906893 0.883787 0.928548 0.951984 0.987423 0.961477 
+4 4 2 0 0 0 0.00354271 0.0014392 0.00600035 0.00724015 0.0174661 0.0298554 0.0266945 0.0278939 0.0126781 0.0125767 0.00420832 
 4 1 3 
 4 2 3 
 4 3 3 
 4 4 3 
-5 1 0 0.680938 0.282506 0.42403 0.359166 0.323145 0.194699 0.235302 0.142232 0.215174 0.140397 0.0959168 7.93301e-13 0.0564042 
-5 2 0 0 0 0.02737 0.0236526 0.0589787 0.0717289 0.0476401 0.0427967 4.12268e-09 0.0301376 0.0275434 0.0349791 0.0345414 
-5 3 0 0.319062 0.717494 0.5486 0.604925 0.617877 0.733572 0.717058 0.802898 0.784826 0.829462 0.874935 0.922889 0.845222 
-5 4 0 0 0 0 0.0122574 0 0 0 0.0120733 7.34489e-09 3.82999e-06 0.00160436 0.0421317 0.0638321 
-5 1 1 0.517599 0.158907 0.244273 0.140964 0.128218 0.124433 0.10828 0.0606464 0.0300903 0.0199988 0.00136033 0.00481781 0.0425507 
-5 2 1 0 0.0106773 0.0266859 0.0238308 0.0481532 0.0583016 0.0501746 0.0205123 0.0129696 0.0331446 0.008526 0.0339401 0.0250284 
-5 3 1 0.482401 0.830415 0.729041 0.828619 0.819474 0.807158 0.831216 0.893085 0.944118 0.916867 0.967163 0.93787 0.916127 
-5 4 1 0 0 0 0.00658665 0.00415468 0.0101083 0.0103289 0.0257567 0.0128225 0.0299893 0.0229508 0.0233723 0.0162941 
-5 1 2 0.36968 0.107853 0.0916179 0.101352 0.105549 0.0483792 0.0417014 0.024497 0.0328669 3.17832e-10 2.29227e-08 0.162906 0.655307 
-5 2 2 0 0.0429075 0.0491388 0.0409025 0.0578306 0.0759726 0.016008 0.0147924 8.73561e-12 0.0682349 0.0242648 0.164764 2.52657e-05 
-5 3 2 0.63032 0.849239 0.855393 0.857745 0.83469 0.872645 0.939111 0.920808 0.911562 0.886182 0.944872 0.67233 0.298124 
-5 4 2 0 0 0.00384985 0 0.00193039 0.00300326 0.00317987 0.039902 0.0555711 0.0455829 0.0308634 9.02788e-10 0.0465443 
+5 1 0 0 0.430022 0.137393 0.18297 0.135604 0.133137 0.108667 0.105581 0.0654358 0.045111 0.0313151 0.0142703 1.24896e-09 0.0474926 
+5 2 0 0 0 0.025539 0.0343589 0.0315736 0.0517961 0.0619176 0.0432191 0.0226378 0.00988405 0.0357719 0.0125515 0.0366367 0.0274628 
+5 3 0 0 0.569978 0.837068 0.781053 0.828779 0.811944 0.821996 0.843284 0.884024 0.923158 0.904318 0.952784 0.937936 0.898514 
+5 4 0 0 0 0 0.00161805 0.00404313 0.00312313 0.0074193 0.00791502 0.0279027 0.0218472 0.0285949 0.0203944 0.0254274 0.0265308 
+5 1 1 0 0.429696 0.133539 0.16799 0.120595 0.119974 0.102862 0.0931569 0.055632 0.0287343 0.0125106 2.44577e-08 0.00901563 0.0461026 
+5 2 1 0 0 0.0265148 0.0348039 0.0319822 0.0513439 0.0612067 0.0428816 0.0198247 0.00907423 0.0365096 0.00935355 0.0376791 0.025942 
+5 3 1 0 0.570304 0.839946 0.795475 0.843956 0.825298 0.827967 0.855257 0.896639 0.941973 0.918112 0.967098 0.931318 0.911959 
+5 4 1 0 0 0 0.00173151 0.00346732 0.00338359 0.00796403 0.00870478 0.0279047 0.0202183 0.0328676 0.023548 0.0219869 0.0159961 
+5 1 2 0 0.401502 0.124901 0.144453 0.113779 0.116063 0.0907055 0.0835277 0.0518361 0.0309483 0.00614756 4.10827e-11 0.012602 0.0498532 
+5 2 2 0 0 0.031954 0.0391719 0.0348598 0.0530025 0.0634992 0.0380386 0.0192873 0.00619634 0.0393811 0.0101609 0.0412252 0.0267464 
+5 3 2 0 0.598498 0.843146 0.813958 0.849003 0.827916 0.839031 0.870743 0.89938 0.937042 0.919435 0.965756 0.92564 0.907717 
+5 4 2 0 0 0 0.00241744 0.00235787 0.00301884 0.00676389 0.00769088 0.029497 0.0258138 0.0350362 0.0240833 0.0205324 0.0156838 
 5 1 3 
 5 2 3 
 5 3 3 
@@ -1341,3 +880,27 @@ p,t,i: 14,2,3 Empty
 Error in <TGraphPainter::PaintGraph>: illegal number of points (0)
 Error in <TGraphPainter::PaintGraph>: illegal number of points (0)
 Error in <TGraphPainter::PaintGraph>: illegal number of points (0)
+ERROR in TPDF::Open: Cannot open file:table/pim_pi.pdf
+ERROR in TPDF::Open: Cannot open file:table/pim_K.pdf
+ERROR in TPDF::Open: Cannot open file:table/pim_p.pdf
+ERROR in TPDF::Open: Cannot open file:table/pim_u.pdf
+ERROR in TPDF::Open: Cannot open file:table/pip_pi.pdf
+ERROR in TPDF::Open: Cannot open file:table/pip_K.pdf
+ERROR in TPDF::Open: Cannot open file:table/pip_p.pdf
+ERROR in TPDF::Open: Cannot open file:table/pip_u.pdf
+ERROR in TPDF::Open: Cannot open file:table/Km_pi.pdf
+ERROR in TPDF::Open: Cannot open file:table/Km_K.pdf
+ERROR in TPDF::Open: Cannot open file:table/Km_p.pdf
+ERROR in TPDF::Open: Cannot open file:table/Km_u.pdf
+ERROR in TPDF::Open: Cannot open file:table/Kp_pi.pdf
+ERROR in TPDF::Open: Cannot open file:table/Kp_K.pdf
+ERROR in TPDF::Open: Cannot open file:table/Kp_p.pdf
+ERROR in TPDF::Open: Cannot open file:table/Kp_u.pdf
+ERROR in TPDF::Open: Cannot open file:table/pm_pi.pdf
+ERROR in TPDF::Open: Cannot open file:table/pm_K.pdf
+ERROR in TPDF::Open: Cannot open file:table/pm_p.pdf
+ERROR in TPDF::Open: Cannot open file:table/pm_u.pdf
+ERROR in TPDF::Open: Cannot open file:table/pp_pi.pdf
+ERROR in TPDF::Open: Cannot open file:table/pp_K.pdf
+ERROR in TPDF::Open: Cannot open file:table/pp_p.pdf
+ERROR in TPDF::Open: Cannot open file:table/pp_u.pdf

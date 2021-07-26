@@ -1,0 +1,934 @@
+
+[1mRooFit v3.60 -- Developed by Wouter Verkerke and David Kirkby[0m 
+                Copyright (C) 2000-2013 NIKHEF, University of California & Stanford University
+                All rights reserved, please read http://roofit.sourceforge.net/license.txt
+
+analysis: K0L
+data_file: /sps/compass/02/yann/2016.fix/P07
+data_template: hist
+data_firstfile_nb: 270000
+data_lastfile_nb: 276318
+fit_type: all
+merged_h: true
+cols_theta_bin: true
+hist_file_iphi: ./hist_iphi_06_10.root
+hist_file_ephi: ./hist_ephi_06_10.root
+hist_file_K0: ./hist_K0_06_10.root
+hist_file_Lam: ./hist_Lambda_06_10.root
+out_file: rich_06_10.root
+remove_richpipe: true
+thr_diff: 5
+LH_pi_K: 1.0
+LH_pi_p: 1.0
+LH_pi_bg: 2.0
+LH_K_pi: 1.06
+LH_K_p: 1.06
+LH_K_bg: 2.0
+LH_bthr_p_pi: 1.
+LH_bthr_p_K: 1.
+LH_athr_p_pi: 1.
+LH_athr_p_K: 1.
+LH_athr_p_bg: 1.
+LH_bthr_p_pi_bg: 2.3
+LH_bthr_p_K_bg: 3.0
+LH_bthr_m_pi_bg: 2.2
+LH_bthr_m_K_bg: 2.9
+max_retry: 100
+line_width: 2
+sidebins: false
+=====================
+lh_cut[i][j]:
+[0][0] -1.00 [0][1]  1.00 [0][2]  1.00 [0][3] -1.00 [0][4] -1.00 [0][5]  2.00 
+[1][0]  1.06 [1][1] -1.00 [1][2]  1.06 [1][3] -1.00 [1][4] -1.00 [1][5]  2.00 
+[2][0]  1.00 [2][1]  1.00 [2][2] -1.00 [2][3] -1.00 [2][4] -1.00 [2][5] -1.00 
+[3][0]  1.00 [3][1]  1.00 [3][2] -1.00 [3][3] -1.00 [3][4] -1.00 [3][5]  1.00 
+[4][0]  2.30 [4][1]  3.00 [4][2]  2.20 [4][3]  2.90 [4][4] -1.00 [4][5] -1.00 
+
+Fits of K0 sample for pi- efficiency:
+ theta:  0   mom:  0   Ent:995228
+=>  1 iters (-26505049.91) -> 3
+ theta:  0   mom:  1   Ent:881864
+=== Sucessful r9essai
+=>  1 iters (-24430417.89) -> 3
+ theta:  0   mom:  2   Ent:1005291
+=== Sucessful r9essai
+=>  1 iters (-28504105.43) -> 3
+ theta:  0   mom:  3   Ent:491539
+=== Sucessful r9essai
+=>  1 iters (-13282793.78) -> 3
+ theta:  0   mom:  4   Ent:205568
+=== Sucessful r9essai
+=>  1 iters (-5191845.33) -> 3
+ theta:  0   mom:  5   Ent:341851
+=== Sucessful r9essai
+=>  1 iters (-8951343.78) -> 3
+ theta:  0   mom:  6   Ent:268508
+=>  1 iters (-6870576.36) -> 3
+ theta:  0   mom:  7   Ent:209098
+=>  1 iters (-5190248.50) -> 3
+ theta:  0   mom:  8   Ent:235437
+=>  1 iters (-5780234.86) -> 3
+ theta:  0   mom:  9   Ent:172459
+=>  1 iters (-4058153.67) -> 3
+ theta:  0   mom: 10   Ent:90374
+=>  1 iters (-1989633.79) -> 3
+ theta:  0   mom: 11   Ent:107676
+=>  3 iters (-2390974.88) -> 3
+ theta:  0   mom: 12   Ent:122150
+=>  1 iters (-2697052.19) -> 3
+ theta:  0   mom: 13   Ent:73542
+=>  1 iters (-1516488.38) -> 3
+ theta:  0   mom: 14   Ent:69693
+=>  1 iters (-1408641.69) -> 3
+ theta:  1   mom:  0   Ent:644246
+=>  1 iters (-16524342.24) -> 3
+ theta:  1   mom:  1   Ent:632237
+=>  1 iters (-17098681.03) -> 3
+ theta:  1   mom:  2   Ent:719688
+=>  2 iters (-19934924.10) -> 3
+ theta:  1   mom:  3   Ent:345478
+=>  1 iters (-9095382.23) -> 3
+ theta:  1   mom:  4   Ent:142601
+=== Sucessful r9essai
+=>  1 iters (-3498238.94) -> 3
+ theta:  1   mom:  5   Ent:234602
+=== Sucessful r9essai
+=>  1 iters (-5967686.50) -> 3
+ theta:  1   mom:  6   Ent:181651
+=== Sucessful r9essai
+=>  1 iters (-4506573.91) -> 3
+ theta:  1   mom:  7   Ent:139809
+=== Sucessful r9essai
+=>  1 iters (-3358775.44) -> 3
+ theta:  1   mom:  8   Ent:155347
+=>  1 iters (-3686724.83) -> 3
+ theta:  1   mom:  9   Ent:112380
+=>  1 iters (-2549641.01) -> 3
+ theta:  1   mom: 10   Ent:58270
+=>  1 iters (-1232241.53) -> 3
+ theta:  1   mom: 11   Ent:68947
+=== Sucessful r9essai
+=>  1 iters (-1471574.66) -> 3
+ theta:  1   mom: 12   Ent:77257
+=>  2 iters (-1638570.99) -> 3
+ theta:  1   mom: 13   Ent:45784
+=>  1 iters (-903305.58) -> 3
+ theta:  1   mom: 14   Ent:42410
+=== Sucessful r9essai
+=>  1 iters (-819286.98) -> 3
+ theta:  2   mom:  0   Ent:1064995
+=>  1 iters (-28320920.72) -> 3
+ theta:  2   mom:  1   Ent:1037749
+=>  1 iters (-29068116.45) -> 3
+ theta:  2   mom:  2   Ent:1166682
+=>  2 iters (-33429586.29) -> 3
+ theta:  2   mom:  3   Ent:552046
+=== Sucessful r9essai
+=>  2 iters (-15045019.45) -> 3
+ theta:  2   mom:  4   Ent:225752
+=== Sucessful r9essai
+=>  1 iters (-5742376.67) -> 3
+ theta:  2   mom:  5   Ent:368699
+=== Sucessful r9essai
+=>  1 iters (-9706226.00) -> 3
+ theta:  2   mom:  6   Ent:282868
+=== Sucessful r9essai
+=>  1 iters (-7262014.08) -> 3
+ theta:  2   mom:  7   Ent:216108
+=== Sucessful r9essai
+=>  2 iters (-5373304.11) -> 3
+ theta:  2   mom:  8   Ent:238447
+=>  1 iters (-5852641.40) -> 3
+ theta:  2   mom:  9   Ent:171418
+=>  1 iters (-4024824.13) -> 3
+ theta:  2   mom: 10   Ent:88517
+=>  1 iters (-1941117.94) -> 3
+ theta:  2   mom: 11   Ent:104485
+=== Sucessful r9essai
+=== Sucessful r9essai
+=>  6 iters (-2311349.30) -> 3
+ theta:  2   mom: 12   Ent:116723
+=>  4 iters (-2565690.01) -> 3
+ theta:  2   mom: 13   Ent:68968
+=>  1 iters (-1413054.98) -> 3
+ theta:  2   mom: 14   Ent:63758
+=>  1 iters (-1279738.71) -> 3
+ theta:  3   mom:  0   Ent:62874
+=>  1 iters (-1402003.75) -> 3
+ theta:  3   mom:  1   Ent:9698
+=>  1 iters (-185798.26) -> 3
+ theta:  3   mom:  2   Ent:2371
+=>  1 iters (-38310.07) -> 3
+ theta:  3   mom:  3   Ent:298
+=== Sucessful r9essai
+=>  2 iters (-3524.62) -> 3
+ theta:  3   mom:  4   Ent:55
+=>  1 iters (-433.88) -> 3
+ theta:  3   mom:  5   Ent:52
+=>  1 iters (-420.18) -> 3
+ theta:  3   mom:  6   Ent:26
+=>  1 iters (-172.71) -> 3
+
+Fits of K0 sample for pi+ efficiency:
+ theta:  0   mom:  0   Ent:995228
+=>  1 iters (-26505049.91) -> 3
+ theta:  0   mom:  1   Ent:881864
+=== Sucessful r9essai
+=>  1 iters (-24430417.89) -> 3
+ theta:  0   mom:  2   Ent:1005291
+=== Sucessful r9essai
+=>  1 iters (-28504105.43) -> 3
+ theta:  0   mom:  3   Ent:491539
+=== Sucessful r9essai
+=>  1 iters (-13282793.78) -> 3
+ theta:  0   mom:  4   Ent:205568
+=== Sucessful r9essai
+=>  1 iters (-5191845.33) -> 3
+ theta:  0   mom:  5   Ent:341851
+=== Sucessful r9essai
+=>  1 iters (-8951343.78) -> 3
+ theta:  0   mom:  6   Ent:268508
+=>  1 iters (-6870576.36) -> 3
+ theta:  0   mom:  7   Ent:209098
+=>  1 iters (-5190248.50) -> 3
+ theta:  0   mom:  8   Ent:235437
+=>  1 iters (-5780234.86) -> 3
+ theta:  0   mom:  9   Ent:172459
+=>  1 iters (-4058153.67) -> 3
+ theta:  0   mom: 10   Ent:90374
+=>  1 iters (-1989633.79) -> 3
+ theta:  0   mom: 11   Ent:107676
+=>  3 iters (-2390974.88) -> 3
+ theta:  0   mom: 12   Ent:122150
+=>  1 iters (-2697052.19) -> 3
+ theta:  0   mom: 13   Ent:73542
+=>  1 iters (-1516488.38) -> 3
+ theta:  0   mom: 14   Ent:69693
+=>  1 iters (-1408641.69) -> 3
+ theta:  1   mom:  0   Ent:644246
+=>  1 iters (-16524342.24) -> 3
+ theta:  1   mom:  1   Ent:632237
+=>  1 iters (-17098681.03) -> 3
+ theta:  1   mom:  2   Ent:719688
+=>  2 iters (-19934924.10) -> 3
+ theta:  1   mom:  3   Ent:345478
+=>  1 iters (-9095382.23) -> 3
+ theta:  1   mom:  4   Ent:142601
+=== Sucessful r9essai
+=>  1 iters (-3498238.94) -> 3
+ theta:  1   mom:  5   Ent:234602
+=== Sucessful r9essai
+=>  1 iters (-5967686.50) -> 3
+ theta:  1   mom:  6   Ent:181651
+=== Sucessful r9essai
+=>  1 iters (-4506573.91) -> 3
+ theta:  1   mom:  7   Ent:139809
+=== Sucessful r9essai
+=>  1 iters (-3358775.44) -> 3
+ theta:  1   mom:  8   Ent:155347
+=>  1 iters (-3686724.83) -> 3
+ theta:  1   mom:  9   Ent:112380
+=>  1 iters (-2549641.01) -> 3
+ theta:  1   mom: 10   Ent:58270
+=>  1 iters (-1232241.53) -> 3
+ theta:  1   mom: 11   Ent:68947
+=== Sucessful r9essai
+=>  1 iters (-1471574.66) -> 3
+ theta:  1   mom: 12   Ent:77257
+=>  2 iters (-1638570.99) -> 3
+ theta:  1   mom: 13   Ent:45784
+=>  1 iters (-903305.58) -> 3
+ theta:  1   mom: 14   Ent:42410
+=== Sucessful r9essai
+=>  1 iters (-819286.98) -> 3
+ theta:  2   mom:  0   Ent:1064995
+=>  1 iters (-28320920.72) -> 3
+ theta:  2   mom:  1   Ent:1037749
+=>  1 iters (-29068116.45) -> 3
+ theta:  2   mom:  2   Ent:1166682
+=>  2 iters (-33429586.29) -> 3
+ theta:  2   mom:  3   Ent:552046
+=== Sucessful r9essai
+=>  2 iters (-15045019.45) -> 3
+ theta:  2   mom:  4   Ent:225752
+=== Sucessful r9essai
+=>  1 iters (-5742376.67) -> 3
+ theta:  2   mom:  5   Ent:368699
+=== Sucessful r9essai
+=>  1 iters (-9706226.00) -> 3
+ theta:  2   mom:  6   Ent:282868
+=== Sucessful r9essai
+=>  1 iters (-7262014.08) -> 3
+ theta:  2   mom:  7   Ent:216108
+=== Sucessful r9essai
+=>  2 iters (-5373304.11) -> 3
+ theta:  2   mom:  8   Ent:238447
+=>  1 iters (-5852641.40) -> 3
+ theta:  2   mom:  9   Ent:171418
+=>  1 iters (-4024824.13) -> 3
+ theta:  2   mom: 10   Ent:88517
+=>  1 iters (-1941117.94) -> 3
+ theta:  2   mom: 11   Ent:104485
+=== Sucessful r9essai
+=== Sucessful r9essai
+=>  6 iters (-2311349.30) -> 3
+ theta:  2   mom: 12   Ent:116723
+=>  4 iters (-2565690.01) -> 3
+ theta:  2   mom: 13   Ent:68968
+=>  1 iters (-1413054.98) -> 3
+ theta:  2   mom: 14   Ent:63758
+=>  1 iters (-1279738.71) -> 3
+ theta:  3   mom:  0   Ent:62874
+=>  1 iters (-1402003.75) -> 3
+ theta:  3   mom:  1   Ent:9698
+=>  1 iters (-185798.26) -> 3
+ theta:  3   mom:  2   Ent:2371
+=>  1 iters (-38310.07) -> 3
+ theta:  3   mom:  3   Ent:298
+=== Sucessful r9essai
+=>  2 iters (-3524.62) -> 3
+ theta:  3   mom:  4   Ent:55
+=>  1 iters (-433.88) -> 3
+ theta:  3   mom:  5   Ent:52
+=>  1 iters (-420.18) -> 3
+ theta:  3   mom:  6   Ent:26
+=>  1 iters (-172.71) -> 3
+
+Fits of PHI sample for K- efficiency:
+ theta:  0   mom:  2   Ent:4628542
+=> 101 iters (-38417186.01) -> 2
+ theta:  0   mom:  3   Ent:1700322
+=== Sucessful r9essai
+=> 19 iters (-14328523.62) -> 3
+ theta:  0   mom:  4   Ent:632319
+=> 101 iters (-5119428.66) -> 2
+ theta:  0   mom:  5   Ent:961139
+=> 101 iters (-8186625.64) -> 2
+ theta:  0   mom:  6   Ent:682410
+=> 101 iters (-5765984.91) -> 2
+ theta:  0   mom:  7   Ent:497105
+=== Sucessful r9essai
+=> 101 iters (-4075455.12) -> 2
+ theta:  0   mom:  8   Ent:513274
+=> 101 iters (-4187911.48) -> 2
+ theta:  0   mom:  9   Ent:327131
+=== Sucessful r9essai
+=== Sucessful r9essai
+=== Sucessful r9essai
+=> 65 iters (-2574971.93) -> 3
+ theta:  0   mom: 10   Ent:152699
+=== Sucessful r9essai
+=== Sucessful r9essai
+=> 24 iters (-1134555.40) -> 3
+ theta:  0   mom: 11   Ent:162003
+=== Sucessful r9essai
+=>  3 iters (-1199772.42) -> 3
+ theta:  0   mom: 12   Ent:158900
+=>  3 iters (-1187898.43) -> 3
+ theta:  0   mom: 13   Ent:79913
+=>  1 iters (-569909.07) -> 3
+ theta:  0   mom: 14   Ent:60366
+=>  1 iters (-440861.60) -> 3
+ theta:  1   mom:  2   Ent:3304802
+=> 101 iters (-26788488.12) -> 2
+ theta:  1   mom:  3   Ent:1196009
+=== Sucessful r9essai
+=> 22 iters (-9782678.61) -> 3
+ theta:  1   mom:  4   Ent:438945
+=== Sucessful r9essai
+=> 12 iters (-3433690.43) -> 3
+ theta:  1   mom:  5   Ent:658695
+=> 101 iters (-5419886.53) -> 2
+ theta:  1   mom:  6   Ent:460137
+=== Sucessful r9essai
+=== Sucessful r9essai
+=== Sucessful r9essai
+=> 101 iters (-3748752.41) -> 2
+ theta:  1   mom:  7   Ent:330492
+=== Sucessful r9essai
+=== Sucessful r9essai
+=== Sucessful r9essai
+=== Sucessful r9essai
+=> 68 iters (-2607163.39) -> 3
+ theta:  1   mom:  8   Ent:336219
+=== Sucessful r9essai
+=== Sucessful r9essai
+=> 101 iters (-2635754.47) -> 2
+ theta:  1   mom:  9   Ent:211007
+=== Sucessful r9essai
+=== Sucessful r9essai
+=== Sucessful r9essai
+=== Sucessful r9essai
+=> 35 iters (-1587904.73) -> 3
+ theta:  1   mom: 10   Ent:97346
+=== Sucessful r9essai
+=== Sucessful r9essai
+=== Sucessful r9essai
+=> 37 iters (-688660.84) -> 3
+ theta:  1   mom: 11   Ent:102231
+=== Sucessful r9essai
+=>  1 iters (-718493.40) -> 3
+ theta:  1   mom: 12   Ent:98729
+=== Sucessful r9essai
+=>  1 iters (-698003.04) -> 3
+ theta:  1   mom: 13   Ent:48554
+=>  1 iters (-324170.45) -> 3
+ theta:  1   mom: 14   Ent:35344
+=>  1 iters (-238658.64) -> 3
+ theta:  2   mom:  2   Ent:5365496
+=> 101 iters (-44941204.35) -> 2
+ theta:  2   mom:  3   Ent:1913310
+=== Sucessful r9essai
+=> 14 iters (-16177339.58) -> 3
+ theta:  2   mom:  4   Ent:695747
+=> 31 iters (-5634545.97) -> 3
+ theta:  2   mom:  5   Ent:1035517
+=> 101 iters (-8804902.67) -> 2
+ theta:  2   mom:  6   Ent:715825
+=== Sucessful r9essai
+=== Sucessful r9essai
+=== Sucessful r9essai
+=== Sucessful r9essai
+=> 101 iters (-6030847.38) -> 2
+ theta:  2   mom:  7   Ent:509811
+=== Sucessful r9essai
+=== Sucessful r9essai
+=> 42 iters (-4163013.81) -> 3
+ theta:  2   mom:  8   Ent:514550
+=> 101 iters (-4172634.45) -> 2
+ theta:  2   mom:  9   Ent:320696
+=== Sucessful r9essai
+=== Sucessful r9essai
+=== Sucessful r9essai
+=== Sucessful r9essai
+=== Sucessful r9essai
+=> 95 iters (-2498104.77) -> 3
+ theta:  2   mom: 10   Ent:147435
+=> 101 iters (-1082574.33) -> 2
+ theta:  2   mom: 11   Ent:154334
+=== Sucessful r9essai
+=>  1 iters (-1124933.22) -> 3
+ theta:  2   mom: 12   Ent:148690
+=>  3 iters (-1090809.71) -> 3
+ theta:  2   mom: 13   Ent:73001
+=>  2 iters (-507165.06) -> 3
+ theta:  2   mom: 14   Ent:53080
+=>  1 iters (-373381.89) -> 3
+ theta:  3   mom:  2   Ent:22266
+=== Sucessful r9essai
+=>  6 iters (-92857.42) -> 3
+ theta:  3   mom:  3   Ent:1695
+=>  1 iters (-4791.17) -> 3
+ theta:  3   mom:  4   Ent:271
+=>  1 iters (-492.88) -> 3
+ theta:  3   mom:  5   Ent:235
+=== Sucessful r9essai
+=>  1 iters (-484.56) -> 3
+ theta:  3   mom:  6   Ent:74
+=>  2 iters (-112.93) -> 3
+ theta:  3   mom:  7   Ent:21
+ theta:  3   mom:  8   Ent:14
+ theta:  3   mom:  9   Ent:2
+ theta:  3   mom: 10   Ent:0
+ theta:  3   mom: 11   Ent:0
+ theta:  3   mom: 12   Ent:0
+ theta:  3   mom: 13   Ent:0
+ theta:  3   mom: 14   Ent:0
+
+Fits of PHI sample for K+ efficiency:
+ theta:  0   mom:  2   Ent:4628542
+=> 101 iters (-38417185.99) -> 2
+ theta:  0   mom:  3   Ent:1700322
+=== Sucessful r9essai
+=> 25 iters (-14328523.62) -> 3
+ theta:  0   mom:  4   Ent:632319
+=== Sucessful r9essai
+=> 45 iters (-5119429.06) -> 3
+ theta:  0   mom:  5   Ent:961139
+=> 101 iters (-8186621.05) -> 2
+ theta:  0   mom:  6   Ent:682410
+=> 101 iters (-5765984.91) -> 2
+ theta:  0   mom:  7   Ent:497105
+=== Sucessful r9essai
+=> 101 iters (-4075455.52) -> 2
+ theta:  0   mom:  8   Ent:513274
+=> 101 iters (-4187911.48) -> 2
+ theta:  0   mom:  9   Ent:327131
+=== Sucessful r9essai
+=>  5 iters (-2574971.59) -> 3
+ theta:  0   mom: 10   Ent:152699
+=== Sucessful r9essai
+=== Sucessful r9essai
+=> 30 iters (-1134555.40) -> 3
+ theta:  0   mom: 11   Ent:162003
+=== Sucessful r9essai
+=>  1 iters (-1199772.42) -> 3
+ theta:  0   mom: 12   Ent:158900
+=>  2 iters (-1187898.43) -> 3
+ theta:  0   mom: 13   Ent:79913
+=== Sucessful r9essai
+=>  1 iters (-569909.07) -> 3
+ theta:  0   mom: 14   Ent:60366
+=>  1 iters (-440861.60) -> 3
+ theta:  1   mom:  2   Ent:3304802
+=> 101 iters (-26788488.11) -> 2
+ theta:  1   mom:  3   Ent:1196009
+=== Sucessful r9essai
+=> 27 iters (-9782678.61) -> 3
+ theta:  1   mom:  4   Ent:438945
+=== Sucessful r9essai
+=== Sucessful r9essai
+=> 32 iters (-3433690.43) -> 3
+ theta:  1   mom:  5   Ent:658695
+=> 33 iters (-5419886.53) -> 3
+ theta:  1   mom:  6   Ent:460137
+=== Sucessful r9essai
+=== Sucessful r9essai
+=> 41 iters (-3748752.24) -> 3
+ theta:  1   mom:  7   Ent:330492
+=== Sucessful r9essai
+=> 43 iters (-2607163.49) -> 3
+ theta:  1   mom:  8   Ent:336219
+=== Sucessful r9essai
+=== Sucessful r9essai
+=== Sucessful r9essai
+=== Sucessful r9essai
+=> 101 iters (-2635754.47) -> 2
+ theta:  1   mom:  9   Ent:211007
+=== Sucessful r9essai
+=== Sucessful r9essai
+=> 26 iters (-1587904.73) -> 3
+ theta:  1   mom: 10   Ent:97346
+=== Sucessful r9essai
+=> 55 iters (-688660.84) -> 3
+ theta:  1   mom: 11   Ent:102231
+=== Sucessful r9essai
+=>  1 iters (-718493.40) -> 3
+ theta:  1   mom: 12   Ent:98729
+=== Sucessful r9essai
+=>  3 iters (-698003.04) -> 3
+ theta:  1   mom: 13   Ent:48554
+=== Sucessful r9essai
+=>  1 iters (-324170.45) -> 3
+ theta:  1   mom: 14   Ent:35344
+=>  1 iters (-238658.64) -> 3
+ theta:  2   mom:  2   Ent:5365496
+=> 101 iters (-44941204.25) -> 2
+ theta:  2   mom:  3   Ent:1913310
+=== Sucessful r9essai
+=> 81 iters (-16177339.58) -> 3
+ theta:  2   mom:  4   Ent:695747
+=== Sucessful r9essai
+=> 21 iters (-5634545.97) -> 3
+ theta:  2   mom:  5   Ent:1035517
+=> 101 iters (-8804902.67) -> 2
+ theta:  2   mom:  6   Ent:715825
+=== Sucessful r9essai
+=== Sucessful r9essai
+=> 101 iters (-6030847.38) -> 2
+ theta:  2   mom:  7   Ent:509811
+=== Sucessful r9essai
+=== Sucessful r9essai
+=== Sucessful r9essai
+=> 101 iters (-4163013.78) -> 2
+ theta:  2   mom:  8   Ent:514550
+=> 101 iters (-4172634.45) -> 3
+ theta:  2   mom:  9   Ent:320696
+=== Sucessful r9essai
+=== Sucessful r9essai
+=== Sucessful r9essai
+=== Sucessful r9essai
+=== Sucessful r9essai
+=> 78 iters (-2498104.77) -> 3
+ theta:  2   mom: 10   Ent:147435
+=== Sucessful r9essai
+=== Sucessful r9essai
+=== Sucessful r9essai
+=== Sucessful r9essai
+=> 101 iters (-1082574.33) -> 2
+ theta:  2   mom: 11   Ent:154334
+=== Sucessful r9essai
+=>  1 iters (-1124933.22) -> 3
+ theta:  2   mom: 12   Ent:148690
+=== Sucessful r9essai
+=== Sucessful r9essai
+=>  2 iters (-1090809.71) -> 3
+ theta:  2   mom: 13   Ent:73001
+=>  2 iters (-507165.06) -> 3
+ theta:  2   mom: 14   Ent:53080
+=>  1 iters (-373381.89) -> 3
+ theta:  3   mom:  2   Ent:22266
+=== Sucessful r9essai
+=>  1 iters (-92857.42) -> 3
+ theta:  3   mom:  3   Ent:1695
+=>  1 iters (-4791.10) -> 3
+ theta:  3   mom:  4   Ent:271
+=>  1 iters (-492.88) -> 3
+ theta:  3   mom:  5   Ent:235
+=>  1 iters (-484.54) -> 3
+ theta:  3   mom:  6   Ent:74
+=>  1 iters (-112.93) -> 3
+ theta:  3   mom:  7   Ent:21
+ theta:  3   mom:  8   Ent:14
+ theta:  3   mom:  9   Ent:2
+ theta:  3   mom: 10   Ent:0
+ theta:  3   mom: 11   Ent:0
+ theta:  3   mom: 12   Ent:0
+ theta:  3   mom: 13   Ent:0
+ theta:  3   mom: 14   Ent:0
+
+Fits of LAMBDA sample for pbar efficiency:
+ theta:  0   mom:  0   Ent:0
+ theta:  0   mom:  1   Ent:2016
+=>  2 iters (0.00) -> 1
+ theta:  0   mom:  2   Ent:43984
+=>  1 iters (-255900.62) -> 3
+ theta:  0   mom:  3   Ent:73266
+=== Sucessful r9essai
+=>  1 iters (-1058884.35) -> 3
+ theta:  0   mom:  4   Ent:46347
+=== Sucessful r9essai
+=>  2 iters (-673121.28) -> 3
+ theta:  0   mom:  5   Ent:102464
+=>  1 iters (-1592666.26) -> 3
+ theta:  0   mom:  6   Ent:105094
+=>  1 iters (-1586076.06) -> 3
+ theta:  0   mom:  7   Ent:97531
+=>  2 iters (-1424337.34) -> 3
+ theta:  0   mom:  8   Ent:126811
+=>  2 iters (-1791251.04) -> 2
+ theta:  0   mom:  9   Ent:105920
+=== Sucessful r9essai
+=>  2 iters (-1430395.90) -> 3
+ theta:  0   mom: 10   Ent:59679
+=== Sucessful r9essai
+=>  2 iters (-751289.29) -> 2
+ theta:  0   mom: 11   Ent:75042
+=>  2 iters (-952729.35) -> 3
+ theta:  0   mom: 12   Ent:93618
+=>  2 iters (-1200788.07) -> 3
+ theta:  0   mom: 13   Ent:63879
+=>  2 iters (-783962.94) -> 3
+ theta:  0   mom: 14   Ent:67168
+=>  2 iters (-788758.29) -> 2
+ theta:  1   mom:  0   Ent:0
+ theta:  1   mom:  1   Ent:1446
+=>  2 iters (0.00) -> 1
+ theta:  1   mom:  2   Ent:31336
+=>  1 iters (-175488.99) -> 3
+ theta:  1   mom:  3   Ent:51647
+=== Sucessful r9essai
+=>  1 iters (-725318.80) -> 3
+ theta:  1   mom:  4   Ent:32326
+=>  2 iters (-456344.87) -> 2
+ theta:  1   mom:  5   Ent:70787
+=>  2 iters (-1070731.87) -> 3
+ theta:  1   mom:  6   Ent:71653
+=>  2 iters (-1051303.13) -> 2
+ theta:  1   mom:  7   Ent:65726
+=>  2 iters (-932526.72) -> 2
+ theta:  1   mom:  8   Ent:84275
+=== Sucessful r9essai
+=>  2 iters (-1153182.42) -> 2
+ theta:  1   mom:  9   Ent:69406
+=>  2 iters (-905316.51) -> 3
+ theta:  1   mom: 10   Ent:38683
+=>  2 iters (-468552.88) -> 3
+ theta:  1   mom: 11   Ent:48149
+=== Sucessful r9essai
+=>  2 iters (-587358.45) -> 3
+ theta:  1   mom: 12   Ent:59255
+=== Sucessful r9essai
+=== Sucessful r9essai
+=>  2 iters (-731681.91) -> 3
+ theta:  1   mom: 13   Ent:39819
+=== Sucessful r9essai
+=>  2 iters (-470768.33) -> 3
+ theta:  1   mom: 14   Ent:40730
+=== Sucessful r9essai
+=>  2 iters (-459335.03) -> 3
+ theta:  2   mom:  0   Ent:0
+ theta:  2   mom:  1   Ent:2359
+=>  2 iters (0.00) -> 1
+ theta:  2   mom:  2   Ent:50684
+=>  1 iters (-296823.14) -> 3
+ theta:  2   mom:  3   Ent:82678
+=>  1 iters (-1211248.63) -> 3
+ theta:  2   mom:  4   Ent:51406
+=>  2 iters (-759530.07) -> 2
+ theta:  2   mom:  5   Ent:111826
+=>  2 iters (-1764002.08) -> 3
+ theta:  2   mom:  6   Ent:112311
+=>  1 iters (-1716536.44) -> 3
+ theta:  2   mom:  7   Ent:102242
+=>  2 iters (-1510055.31) -> 2
+ theta:  2   mom:  8   Ent:130056
+=>  2 iters (-1849362.86) -> 3
+ theta:  2   mom:  9   Ent:106315
+=>  2 iters (-1440228.79) -> 2
+ theta:  2   mom: 10   Ent:58972
+=>  2 iters (-742562.16) -> 2
+ theta:  2   mom: 11   Ent:73132
+=>  2 iters (-926561.79) -> 2
+ theta:  2   mom: 12   Ent:89619
+=== Sucessful r9essai
+=>  1 iters (-1148429.72) -> 3
+ theta:  2   mom: 13   Ent:60059
+=== Sucessful r9essai
+=>  1 iters (-737574.31) -> 3
+ theta:  2   mom: 14   Ent:61293
+=>  2 iters (-717935.33) -> 3
+ theta:  3   mom:  0   Ent:0
+ theta:  3   mom:  1   Ent:12
+ theta:  3   mom:  2   Ent:126
+ FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
+=>  1 iters (-333.19) -> 3
+ theta:  3   mom:  3   Ent:68
+=>  1 iters (-431.33) -> 3
+ theta:  3   mom:  4   Ent:42
+=>  2 iters (-304.21) -> 3
+ theta:  3   mom:  5   Ent:28
+=== Sucessful r9essai
+=>  2 iters (-208.44) -> 3
+ theta:  3   mom:  6   Ent:10
+
+Fits of LAMBDA sample for p efficiency:
+ theta:  0   mom:  0   Ent:0
+ theta:  0   mom:  1   Ent:2016
+=>  2 iters (0.00) -> 1
+ theta:  0   mom:  2   Ent:43984
+=>  1 iters (-255900.62) -> 3
+ theta:  0   mom:  3   Ent:73266
+=== Sucessful r9essai
+=>  1 iters (-1058884.35) -> 3
+ theta:  0   mom:  4   Ent:46347
+=>  2 iters (-673121.28) -> 2
+ theta:  0   mom:  5   Ent:102464
+=>  1 iters (-1592666.26) -> 3
+ theta:  0   mom:  6   Ent:105094
+=>  1 iters (-1586076.06) -> 3
+ theta:  0   mom:  7   Ent:97531
+=>  2 iters (-1424337.32) -> 3
+ theta:  0   mom:  8   Ent:126811
+=>  2 iters (-1791251.04) -> 2
+ theta:  0   mom:  9   Ent:105920
+=== Sucessful r9essai
+=>  2 iters (-1430395.90) -> 3
+ theta:  0   mom: 10   Ent:59679
+=== Sucessful r9essai
+=>  2 iters (-751289.29) -> 2
+ theta:  0   mom: 11   Ent:75042
+=>  2 iters (-952729.33) -> 3
+ theta:  0   mom: 12   Ent:93618
+=>  2 iters (-1200788.09) -> 2
+ theta:  0   mom: 13   Ent:63879
+=>  2 iters (-783962.94) -> 3
+ theta:  0   mom: 14   Ent:67168
+=>  2 iters (-788758.28) -> 3
+ theta:  1   mom:  0   Ent:0
+ theta:  1   mom:  1   Ent:1446
+=>  2 iters (0.00) -> 1
+ theta:  1   mom:  2   Ent:31336
+=>  1 iters (-175488.99) -> 3
+ theta:  1   mom:  3   Ent:51647
+=== Sucessful r9essai
+=>  1 iters (-725318.80) -> 3
+ theta:  1   mom:  4   Ent:32326
+=>  2 iters (-456344.87) -> 2
+ theta:  1   mom:  5   Ent:70787
+=>  2 iters (-1070731.88) -> 3
+ theta:  1   mom:  6   Ent:71653
+=>  2 iters (-1051303.13) -> 2
+ theta:  1   mom:  7   Ent:65726
+=>  2 iters (-932526.69) -> 2
+ theta:  1   mom:  8   Ent:84275
+=>  2 iters (-1153182.42) -> 3
+ theta:  1   mom:  9   Ent:69406
+=>  2 iters (-905316.51) -> 2
+ theta:  1   mom: 10   Ent:38683
+=>  2 iters (-468552.88) -> 2
+ theta:  1   mom: 11   Ent:48149
+=>  2 iters (-587358.45) -> 3
+ theta:  1   mom: 12   Ent:59255
+=== Sucessful r9essai
+=== Sucessful r9essai
+=>  2 iters (-731681.91) -> 3
+ theta:  1   mom: 13   Ent:39819
+=>  2 iters (-470768.33) -> 3
+ theta:  1   mom: 14   Ent:40730
+=>  2 iters (-459335.03) -> 3
+ theta:  2   mom:  0   Ent:0
+ theta:  2   mom:  1   Ent:2359
+=>  2 iters (0.00) -> 1
+ theta:  2   mom:  2   Ent:50684
+=>  1 iters (-296823.14) -> 3
+ theta:  2   mom:  3   Ent:82678
+=>  1 iters (-1211248.63) -> 3
+ theta:  2   mom:  4   Ent:51406
+=>  2 iters (-759530.07) -> 2
+ theta:  2   mom:  5   Ent:111826
+=>  2 iters (-1764002.08) -> 2
+ theta:  2   mom:  6   Ent:112311
+=>  1 iters (-1716536.44) -> 3
+ theta:  2   mom:  7   Ent:102242
+=>  2 iters (-1510055.31) -> 3
+ theta:  2   mom:  8   Ent:130056
+=>  2 iters (-1849362.86) -> 3
+ theta:  2   mom:  9   Ent:106315
+=== Sucessful r9essai
+=>  2 iters (-1440228.79) -> 3
+ theta:  2   mom: 10   Ent:58972
+=>  2 iters (-742562.16) -> 2
+ theta:  2   mom: 11   Ent:73132
+=>  2 iters (-926561.81) -> 3
+ theta:  2   mom: 12   Ent:89619
+=>  2 iters (-1148429.72) -> 2
+ theta:  2   mom: 13   Ent:60059
+=>  2 iters (-737574.31) -> 3
+ theta:  2   mom: 14   Ent:61293
+=>  2 iters (-717935.34) -> 3
+ theta:  3   mom:  0   Ent:0
+ theta:  3   mom:  1   Ent:12
+ theta:  3   mom:  2   Ent:126
+ FUNCTION MUST BE MINIMIZED BEFORE CALLING IMProve   
+=>  1 iters (-333.19) -> 3
+ theta:  3   mom:  3   Ent:68
+=>  1 iters (-431.33) -> 3
+ theta:  3   mom:  4   Ent:42
+=>  2 iters (-304.21) -> 3
+ theta:  3   mom:  5   Ent:28
+=== Sucessful r9essai
+=>  2 iters (-208.44) -> 3
+ theta:  3   mom:  6   Ent:10
+p,t,i: 0,1,2 Empty
+p,t,i: 0,1,3 Empty
+p,t,i: 0,1,4 Empty
+p,t,i: 0,1,5 Empty
+p,t,i: 0,2,2 Empty
+p,t,i: 0,2,3 Empty
+p,t,i: 0,2,4 Empty
+p,t,i: 0,2,5 Empty
+p,t,i: 1,1,2 Empty
+p,t,i: 1,1,3 Empty
+p,t,i: 1,2,2 Empty
+p,t,i: 1,2,3 Empty
+0 1 0 0.921239 0.962617 0.969514 0.974306 0.975991 0.976657 0.979991 0.981032 0.983722 0.985988 0.987468 0.9841 0.973857 0.95935 0.920298 
+0 2 0 0 0 4.36106e-06 0.000523173 0.00122615 0.00180937 0.00196784 0.00176682 0.00126299 0.00212728 0.00227308 0.00326647 0.00640499 0.00801318 0.0110232 
+0 3 0 0.0787612 0.0373835 0.0304817 0.025076 0.0226489 0.0211661 0.0176311 0.0167362 0.0143557 0.00855262 0.0037579 0.00522135 0.00627477 0.00397583 0.00368329 
+0 4 0 0 0 0 9.43868e-05 0.000134194 0.000367439 0.000409792 0.000464577 0.000659239 0.00333194 0.00650145 0.0074125 0.0134634 0.0286613 0.064995 
+0 1 1 0.932195 0.964524 0.969873 0.97431 0.975917 0.976643 0.979824 0.980981 0.983827 0.986141 0.987524 0.984043 0.974755 0.959967 0.923997 
+0 2 1 0 0 4.5893e-06 0.000528684 0.00129558 0.0018839 0.0020195 0.00181131 0.00125646 0.00206206 0.00223726 0.00326171 0.00613255 0.00798119 0.0105018 
+0 3 1 0.0678047 0.0354755 0.0301228 0.0250618 0.0226513 0.0211005 0.0177445 0.0167301 0.0142318 0.00856561 0.003727 0.00537804 0.00631625 0.00401411 0.00318402 
+0 4 1 0 0 0 9.99185e-05 0.000135642 0.000373013 0.00041154 0.000477566 0.000684206 0.00323114 0.00651214 0.00731716 0.0127966 0.0280376 0.0623171 
+0 1 2 0.932958 0.964578 0.969822 0.974225 0.975754 0.976501 0.979636 0.980817 0.983691 0.986075 0.987474 0.983996 0.974786 0.959997 0.924071 
+0 2 2 0 0 4.88897e-06 0.000535309 0.00133415 0.00193572 0.00204185 0.00180082 0.0012604 0.00208016 0.00221332 0.00325674 0.00610845 0.0079945 0.0104843 
+0 3 2 0.0670415 0.0354217 0.0301729 0.0251362 0.0227729 0.0211859 0.0179052 0.0168944 0.0143529 0.00861195 0.00377944 0.00539152 0.00633077 0.00400746 0.00319079 
+0 4 2 0 0 0 0.000103611 0.000139415 0.000377173 0.000416931 0.000487714 0.000696209 0.00323285 0.00653366 0.00735589 0.0127746 0.0280009 0.0622539 
+0 1 3 0.858798 0.87968 0.855906 0.851324 0.856637 0.829355 0.88119 
+0 2 3 0 0 1.23335e-12 0.00342525 0 0.0222186 0 
+0 3 3 0.141202 0.12032 0.144094 0.145251 0.143363 0.148426 0.11881 
+0 4 3 0 0 0 0 0 0 0 
+1 1 0 0.921239 0.962617 0.969514 0.974306 0.975991 0.976657 0.979991 0.981032 0.983722 0.985988 0.987468 0.9841 0.973857 0.95935 0.920298 
+1 2 0 0 0 4.36106e-06 0.000523173 0.00122615 0.00180937 0.00196784 0.00176682 0.00126299 0.00212728 0.00227308 0.00326647 0.00640499 0.00801318 0.0110232 
+1 3 0 0.0787612 0.0373835 0.0304817 0.025076 0.0226489 0.0211661 0.0176311 0.0167362 0.0143557 0.00855262 0.0037579 0.00522135 0.00627477 0.00397583 0.00368329 
+1 4 0 0 0 0 9.43868e-05 0.000134194 0.000367439 0.000409792 0.000464577 0.000659239 0.00333194 0.00650145 0.0074125 0.0134634 0.0286613 0.064995 
+1 1 1 0.932195 0.964524 0.969873 0.97431 0.975917 0.976643 0.979824 0.980981 0.983827 0.986141 0.987524 0.984043 0.974755 0.959967 0.923997 
+1 2 1 0 0 4.5893e-06 0.000528684 0.00129558 0.0018839 0.0020195 0.00181131 0.00125646 0.00206206 0.00223726 0.00326171 0.00613255 0.00798119 0.0105018 
+1 3 1 0.0678047 0.0354755 0.0301228 0.0250618 0.0226513 0.0211005 0.0177445 0.0167301 0.0142318 0.00856561 0.003727 0.00537804 0.00631625 0.00401411 0.00318402 
+1 4 1 0 0 0 9.99185e-05 0.000135642 0.000373013 0.00041154 0.000477566 0.000684206 0.00323114 0.00651214 0.00731716 0.0127966 0.0280376 0.0623171 
+1 1 2 0.932958 0.964578 0.969822 0.974225 0.975754 0.976501 0.979636 0.980817 0.983691 0.986075 0.987474 0.983996 0.974786 0.959997 0.924071 
+1 2 2 0 0 4.88897e-06 0.000535309 0.00133415 0.00193572 0.00204185 0.00180082 0.0012604 0.00208016 0.00221332 0.00325674 0.00610845 0.0079945 0.0104843 
+1 3 2 0.0670415 0.0354217 0.0301729 0.0251362 0.0227729 0.0211859 0.0179052 0.0168944 0.0143529 0.00861195 0.00377944 0.00539152 0.00633077 0.00400746 0.00319079 
+1 4 2 0 0 0 0.000103611 0.000139415 0.000377173 0.000416931 0.000487714 0.000696209 0.00323285 0.00653366 0.00735589 0.0127746 0.0280009 0.0622539 
+1 1 3 0.858798 0.87968 0.855906 0.851324 0.856637 0.829355 0.88119 
+1 2 3 0 0 1.23335e-12 0.00342525 0 0.0222186 0 
+1 3 3 0.141202 0.12032 0.144094 0.145251 0.143363 0.148426 0.11881 
+1 4 3 0 0 0 0 0 0 0 
+2 1 0 0.100651 0.0637534 0.0363417 0.0253903 0.0310141 0.0176134 0.0178652 0.00857565 0.0299083 0.0221744 0.0464076 0.0849914 0.194169 
+2 2 0 0.00550641 0.622433 0.876304 0.930559 0.933407 0.951637 0.957663 0.964185 0.940616 0.934911 0.881004 0.767475 0.485251 
+2 3 0 0.893843 0.311554 0.0849356 0.041618 0.0332319 0.0298139 0.0207784 0.0181615 0.0135006 0.0132293 0.0116092 0.00633629 0.00938618 
+2 4 0 2.00464e-10 0.00225993 0.0024184 0.00243221 0.00234674 0.000936102 0.00369345 0.00907749 0.0159748 0.0296857 0.0609789 0.141197 0.311194 
+2 1 1 0.097244 0.058802 0.0341133 0.0219931 0.0273249 0.0169583 0.0166385 0.000589368 0.0276353 0.0189793 0.0340481 0.0637189 0.151285 
+2 2 1 0.00561365 0.632972 0.881014 0.936499 0.93902 0.95395 0.959811 0.974412 0.945758 0.942323 0.899836 0.800278 0.529021 
+2 3 1 0.897142 0.306042 0.0827501 0.0391752 0.0315354 0.0282779 0.0203517 0.0176441 0.0132619 0.0134479 0.0118354 0.00714768 0.0103514 
+2 4 1 4.0077e-19 0.0021834 0.0021222 0.00233314 0.00212012 0.000813414 0.00319864 0.00735407 0.0133446 0.0252501 0.0542807 0.128855 0.309342 
+2 1 2 0.0954617 0.0567356 0.0333417 0.0208352 0.0256072 0.0169554 0.015109 0.00058895 0.0273537 0.0190645 0.0339648 0.063865 0.15121 
+2 2 2 0.0056782 0.637922 0.88292 0.938451 0.941148 0.953321 0.961234 0.974632 0.946163 0.942315 0.899788 0.800063 0.529104 
+2 3 2 0.89886 0.303176 0.0816369 0.0384553 0.0311553 0.0289263 0.0205141 0.0175397 0.0132828 0.0134376 0.0118076 0.00729936 0.0103508 
+2 4 2 1.49717e-14 0.00216652 0.00210166 0.00225869 0.00208978 0.000797225 0.00314305 0.0072391 0.0132004 0.0251826 0.0544399 0.128773 0.309335 
+2 1 3 0.0722859 1.14084e-08 0.474884 0.145658 1.11368e-10 
+2 2 3 0.00646019 0.501394 0.479594 0.521698 0.413084 
+2 3 3 0.921254 0.498606 0.0455217 0.332645 0.586916 
+2 4 3 0 0 0 0 0 
+3 1 0 0.100683 0.0637217 0.037549 0.0228719 0.0309045 0.0178808 0.0172977 0.0117063 0.0298409 0.0221803 0.0464089 0.0849908 0.194176 
+3 2 0 0.00554421 0.622455 0.874868 0.934597 0.933543 0.951286 0.958382 0.961169 0.940688 0.934904 0.881002 0.767475 0.485238 
+3 3 0 0.893772 0.311565 0.0851563 0.0400875 0.0332014 0.0298836 0.0206265 0.0180762 0.013496 0.0132295 0.0116098 0.0063377 0.00938756 
+3 4 0 1.60187e-14 0.00225831 0.00242649 0.00244405 0.0023507 0.000949721 0.00369404 0.00904891 0.0159755 0.0296857 0.0609798 0.141197 0.311198 
+3 1 1 0.0972306 0.0587975 0.0341053 0.0221035 0.0264527 0.01632 0.0167211 0.000686224 0.0276974 0.0190086 0.034044 0.0637194 0.15134 
+3 2 1 0.00561493 0.632981 0.881023 0.936356 0.940094 0.954747 0.959703 0.974317 0.945705 0.942291 0.899842 0.80028 0.52901 
+3 3 1 0.897155 0.306038 0.0827494 0.0392064 0.0313384 0.0281271 0.0203773 0.0176424 0.013251 0.0134508 0.0118353 0.00714328 0.0103564 
+3 4 1 1.31649e-13 0.00218313 0.00212194 0.00233386 0.00211507 0.000805472 0.00319874 0.00735477 0.0133463 0.0252495 0.0542786 0.128857 0.309294 
+3 1 2 0.0953181 0.0567377 0.0332954 0.0212012 0.0255135 0.0164106 0.0149838 0.0003061 0.0272515 0.0190364 0.034004 0.0638861 0.151221 
+3 2 2 0.0057429 0.63792 0.882952 0.93783 0.941232 0.953965 0.961364 0.974961 0.946264 0.942351 0.899754 0.800046 0.529085 
+3 3 2 0.898939 0.303176 0.08165 0.0387062 0.0311638 0.0288303 0.0205097 0.0174896 0.0132827 0.0134308 0.0118196 0.00729981 0.0103509 
+3 4 2 9.8981e-10 0.00216615 0.00210238 0.00226244 0.00209095 0.000794322 0.00314234 0.00724287 0.0132021 0.0251817 0.0544229 0.128768 0.309343 
+3 1 3 0.0728576 2.13406e-08 0.47646 0.152467 4.21994e-11 
+3 2 3 0.00645629 0.501393 0.479434 0.51774 0.413057 
+3 3 3 0.920686 0.498607 0.0441061 0.329793 0.586943 
+3 4 3 0 0 0 0 0 
+4 1 0 0 0.375943 0.157986 0.119154 0.138814 0.138605 0.14508 0.0960879 0.0541299 0.0260409 0.0276759 0.0321143 0.0193719 0.0201256 
+4 2 0 0 0.000781932 0.0214647 0.0367616 0.0339939 0.0517059 0.0567793 0.0363047 0.0193866 0.00629876 0.00651147 0.010954 0.0202608 0.021132 
+4 3 0 0 0.623275 0.819845 0.842043 0.824071 0.805494 0.790266 0.861483 0.913055 0.952868 0.951051 0.94289 0.940294 0.938362 
+4 4 0 0 0 0.000704082 0.00204174 0.00312157 0.0041959 0.00787521 0.00612431 0.0134282 0.014792 0.0147619 0.0140418 0.0200734 0.0203805 
+4 1 1 0 0.373893 0.154696 0.115294 0.134121 0.13287 0.140537 0.0900676 0.050848 0.0220178 0.0279626 0.0328168 0.0198869 0.0197611 
+4 2 1 0 0.000789553 0.0219626 0.0375126 0.0346171 0.052195 0.0570197 0.0361207 0.0191045 0.00573742 0.00593315 0.0110302 0.0209146 0.0197912 
+4 3 1 0 0.625318 0.822611 0.845206 0.828135 0.81087 0.794678 0.868 0.916606 0.957951 0.951745 0.941936 0.939974 0.942216 
+4 4 1 0 0 0.000730998 0.00198754 0.00312705 0.00406463 0.00776559 0.00581134 0.0134412 0.0142938 0.0143597 0.0142169 0.0192242 0.0182315 
+4 1 2 0 0.372416 0.153032 0.113699 0.132158 0.130709 0.138238 0.0884861 0.050259 0.0218149 0.0278321 0.0331407 0.0202736 0.0192239 
+4 2 2 0 0.000783669 0.0223168 0.0379857 0.0351022 0.0523427 0.0570179 0.0360462 0.0190417 0.00580757 0.00583814 0.0110202 0.021168 0.0199392 
+4 3 2 0 0.6268 0.823904 0.84635 0.829616 0.812997 0.797087 0.86972 0.917313 0.958152 0.95195 0.941592 0.93941 0.942689 
+4 4 2 0 0 0.000746714 0.00196546 0.0031234 0.0039512 0.00765722 0.00574741 0.0133868 0.0142259 0.01438 0.0142467 0.0191481 0.0181478 
+4 1 3 2.63841e-06 0.0465498 0.0587879 0.145744 
+4 2 3 0 0.0490311 5.29473e-06 5.48299e-10 
+4 3 3 0.999997 0.904419 0.941207 0.854256 
+4 4 3 0 0 0 0 
+5 1 0 0 0.375943 0.157986 0.119139 0.138814 0.138605 0.145073 0.0960736 0.0541279 0.0259794 0.0276824 0.0321903 0.0193109 0.0201285 
+5 2 0 0 0.000781932 0.0214647 0.0367587 0.0339939 0.0517059 0.0567761 0.0363041 0.0193862 0.00629998 0.00650984 0.0109195 0.0202658 0.021133 
+5 3 0 0 0.623275 0.819845 0.842059 0.824071 0.805494 0.790282 0.861497 0.913057 0.952926 0.951051 0.942867 0.940343 0.938358 
+5 4 0 0 0 0.000704082 0.00204315 0.00312157 0.0041959 0.00786923 0.0061249 0.0134286 0.0147947 0.0147566 0.0140235 0.0200802 0.0203807 
+5 1 1 0 0.373893 0.154696 0.115287 0.134264 0.13287 0.140538 0.0900508 0.0508674 0.021987 0.0279589 0.0328098 0.0199303 0.0200274 
+5 2 1 0 0.000789553 0.0219626 0.0375165 0.0346922 0.0521937 0.0570141 0.036118 0.0191044 0.00574605 0.00592929 0.0110261 0.0209151 0.0197906 
+5 3 1 0 0.625318 0.822611 0.845208 0.827926 0.810872 0.794674 0.868014 0.916582 0.95798 0.951753 0.941947 0.939928 0.941969 
+5 4 1 0 0 0.000730998 0.00198862 0.00311728 0.00406421 0.00777382 0.00581686 0.0134459 0.0142871 0.0143585 0.0142172 0.0192267 0.0182129 
+5 1 2 0 0.372416 0.153032 0.113649 0.132155 0.130709 0.138242 0.0884889 0.0502421 0.021814 0.0277827 0.0331372 0.0201962 0.0191721 
+5 2 2 0 0.000783669 0.0223168 0.037981 0.0351017 0.0523427 0.0570204 0.036045 0.0190371 0.00580668 0.00583239 0.0110352 0.0211589 0.0199324 
+5 3 2 0 0.6268 0.823904 0.846392 0.829621 0.812997 0.797088 0.869723 0.917328 0.958151 0.952001 0.941583 0.939497 0.942701 
+5 4 2 0 0 0.000746714 0.00197857 0.00312223 0.0039512 0.00764983 0.00574331 0.0133928 0.014228 0.0143836 0.0142443 0.019148 0.0181944 
+5 1 3 2.63841e-06 0.0465498 0.0598863 0.145974 
+5 2 3 0 0.0490311 4.14479e-10 4.95975e-08 
+5 3 3 0.999997 0.904419 0.940114 0.854026 
+5 4 3 0 0 0 0 
+ERROR in TPDF::Open: Cannot open file:table/pim_pi.pdf
+ERROR in TPDF::Open: Cannot open file:table/pim_K.pdf
+ERROR in TPDF::Open: Cannot open file:table/pim_p.pdf
+ERROR in TPDF::Open: Cannot open file:table/pim_u.pdf
+ERROR in TPDF::Open: Cannot open file:table/pip_pi.pdf
+ERROR in TPDF::Open: Cannot open file:table/pip_K.pdf
+ERROR in TPDF::Open: Cannot open file:table/pip_p.pdf
+ERROR in TPDF::Open: Cannot open file:table/pip_u.pdf
+ERROR in TPDF::Open: Cannot open file:table/Km_pi.pdf
+ERROR in TPDF::Open: Cannot open file:table/Km_K.pdf
+ERROR in TPDF::Open: Cannot open file:table/Km_p.pdf
+ERROR in TPDF::Open: Cannot open file:table/Km_u.pdf
+ERROR in TPDF::Open: Cannot open file:table/Kp_pi.pdf
+ERROR in TPDF::Open: Cannot open file:table/Kp_K.pdf
+ERROR in TPDF::Open: Cannot open file:table/Kp_p.pdf
+ERROR in TPDF::Open: Cannot open file:table/Kp_u.pdf
+ERROR in TPDF::Open: Cannot open file:table/pm_pi.pdf
+ERROR in TPDF::Open: Cannot open file:table/pm_K.pdf
+ERROR in TPDF::Open: Cannot open file:table/pm_p.pdf
+ERROR in TPDF::Open: Cannot open file:table/pm_u.pdf
+ERROR in TPDF::Open: Cannot open file:table/pp_pi.pdf
+ERROR in TPDF::Open: Cannot open file:table/pp_K.pdf
+ERROR in TPDF::Open: Cannot open file:table/pp_p.pdf
+ERROR in TPDF::Open: Cannot open file:table/pp_u.pdf

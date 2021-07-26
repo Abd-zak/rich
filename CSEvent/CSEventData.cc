@@ -1,1 +1,9 @@
-../userevents/CSEventData.cc
+
+#include "CSEventData.h"
+
+CSEventData::~CSEventData()
+{}
+CSHadronData::~CSHadronData()
+{}
+CSResonanceData::~CSResonanceData()
+{}
